@@ -1,0 +1,52 @@
+---
+family:
+  inet:
+    filter:
+    - name: Management_Subnet_Ingress
+      term:
+      - name: allow connection from Management Subnet to TCP 8080
+        from:
+          protocol:
+          - tcp
+          destination-port:
+          - '8080'
+          source-address:
+          - name: 10.172.0.1/32
+        then:
+          accept:
+          -
+      - name: Allow TCP/UDP Port 23
+        from:
+          destination-port:
+          - '23'
+          source-address:
+          - name: 0.0.0.0/0
+        then:
+          accept:
+          -
+      - name: allow mgmt network to Google DNS
+        from:
+          protocol:
+          - udp
+          source-address:
+          - name: 10.52.0.0/16
+          destination-address:
+          - name: 8.8.8.8/32
+          port:
+          - '63'
+        then:
+          accept:
+          -
+      - name: allow TCP Established
+        from:
+          tcp-established:
+          -
+          source-address:
+          - name: 10.52.0.0/16
+        then:
+          accept:
+          -
+      - name: all-others
+        then:
+          reject:
+          -
