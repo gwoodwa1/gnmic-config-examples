@@ -1,0 +1,335 @@
+{
+  "interfaces": {
+    "interface": [
+      {
+        "name": "ge-0/0/3",
+        "description": "Spine-1 ge-0/0/4",
+        "vlan-tagging": [
+          null
+        ],
+        "unit": [
+          {
+            "name": 1001,
+            "vlan-id": 1001,
+            "description": "to Spine-1 Vlan 1001",
+            "family": {
+              "inet": {
+                "address": [
+                  {
+                    "name": "192.168.10.11/24"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": 1002,
+            "vlan-id": 1002,
+            "description": "to Spine-1 Vlan 1002",
+            "family": {
+              "inet": {
+                "address": [
+                  {
+                    "name": "192.168.30.12/24"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": 1003,
+            "vlan-id": 1003,
+            "description": "to Spine-1 Vlan 1003",
+            "family": {
+              "inet": {
+                "address": [
+                  {
+                    "name": "192.168.30.13/24"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ge-0/0/4",
+        "encapsulation": "flexible-ethernet-services",
+        "flexible-vlan-tagging": [
+          null
+        ],
+        "unit": [
+          {
+            "name": 50,
+            "description": "DC_EVPN",
+            "encapsulation": "vlan-bridge",
+            "family": {
+              "bridge": [
+                null
+              ]
+            },
+            "vlan-id": 50
+          }
+        ]
+      }
+    ]
+  },
+  "routing-options": {
+    "autonomous-system": {
+      "as-number": "65004"
+    }
+  },
+  "protocols": {
+    "bgp": {
+      "group": [
+        {
+          "name": "route-reflector-peering",
+          "type": "internal",
+          "family": {
+            "evpn": {
+              "signaling": [
+                null
+              ]
+            }
+          },
+          "local-address": "10.10.10.1",
+          "neighbor": [
+            {
+              "name": "10.10.10.2",
+              "authentication-key": "$9$CVAyuOIyrKvWXVwGjHmQz",
+              "peer-as": "65004",
+              "description": "Primary Route Reflector"
+            },
+            {
+              "name": "10.10.10.3",
+              "authentication-key": "$9$CVAyuOIyrKvWXVwGjHmQz",
+              "peer-as": "65004",
+              "description": "Secondary Route Reflector"
+            },
+            {
+              "name": "10.10.10.3",
+              "authentication-key": "$9$CVAyuOIyrKvWXVwGjHmQz",
+              "peer-as": "65004",
+              "description": "Tietary Route Reflector"
+            }
+          ]
+        }
+      ]
+    },
+    "mpls": {
+      "interface": [
+        {
+          "name": "all"
+        }
+      ]
+    }
+  },
+  "routing-instances": {
+    "instance": [
+      {
+        "name": "mgmt_network_dc",
+        "instance-type": "vrf",
+        "route-distinguisher": {
+          "rd-type": "6500:200"
+        },
+        "vrf-target": {
+          "community": "target:65002:20000"
+        },
+        "routing-options": {
+          "autonomous-system": {
+            "as-number": "65002"
+          },
+          "router-id": "172.10.10.1"
+        },
+        "vrf-table-label": [
+          null
+        ],
+        "protocols": {
+          "bgp": {
+            "group": [
+              {
+                "name": "peer to route-reflector",
+                "type": "internal",
+                "local-address": "172.10.10.1"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "dmz_network_dc",
+        "instance-type": "vrf",
+        "interface": [
+          {
+            "name": "ge-0/0/3.1002"
+          }
+        ],
+        "route-distinguisher": {
+          "rd-type": "6500:300"
+        },
+        "vrf-target": {
+          "community": "target:65003:30000"
+        },
+        "routing-options": {
+          "autonomous-system": {
+            "as-number": "65002"
+          },
+          "router-id": "172.10.10.2"
+        },
+        "vrf-table-label": [
+          null
+        ],
+        "protocols": {
+          "bgp": {
+            "group": [
+              {
+                "name": "peer to route-reflector",
+                "type": "internal",
+                "local-address": "172.10.10.1"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "pod1_network_dc",
+        "instance-type": "vrf",
+        "interface": [
+          {
+            "name": "ge-0/0/3.1003"
+          }
+        ],
+        "route-distinguisher": {
+          "rd-type": "6500:310"
+        },
+        "vrf-target": {
+          "community": "target:65003:30000"
+        },
+        "routing-options": {
+          "autonomous-system": {
+            "as-number": "65002"
+          },
+          "router-id": "172.20.10.2"
+        },
+        "vrf-table-label": [
+          null
+        ],
+        "protocols": {
+          "bgp": {
+            "group": [
+              {
+                "name": "peer to route-reflector",
+                "type": "internal",
+                "local-address": "172.20.10.1"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "firewall": {
+    "family": {
+      "inet": {
+        "filter": [
+          {
+            "name": "Management_Subnet_Ingress",
+            "term": [
+              {
+                "name": "allow connection from Management Subnet to TCP 8080",
+                "from": {
+                  "protocol": [
+                    "tcp"
+                  ],
+                  "destination-port": [
+                    "8080"
+                  ],
+                  "source-address": [
+                    {
+                      "name": "10.172.0.1/32"
+                    }
+                  ]
+                },
+                "then": {
+                  "accept": [
+                    null
+                  ]
+                }
+              },
+              {
+                "name": "Allow TCP/UDP Port 23",
+                "from": {
+                  "destination-port": [
+                    "23"
+                  ],
+                  "source-address": [
+                    {
+                      "name": "0.0.0.0/0"
+                    }
+                  ]
+                },
+                "then": {
+                  "accept": [
+                    null
+                  ]
+                }
+              },
+              {
+                "name": "allow mgmt network to Google DNS",
+                "from": {
+                  "protocol": [
+                    "udp"
+                  ],
+                  "source-address": [
+                    {
+                      "name": "10.52.0.0/16"
+                    }
+                  ],
+                  "destination-address": [
+                    {
+                      "name": "8.8.8.8/32"
+                    }
+                  ],
+                  "port": [
+                    "63"
+                  ]
+                },
+                "then": {
+                  "accept": [
+                    null
+                  ]
+                }
+              },
+              {
+                "name": "allow TCP Established",
+                "from": {
+                  "tcp-established": [
+                    null
+                  ],
+                  "source-address": [
+                    {
+                      "name": "10.52.0.0/16"
+                    }
+                  ]
+                },
+                "then": {
+                  "accept": [
+                    null
+                  ]
+                }
+              },
+              {
+                "name": "all-others",
+                "then": {
+                  "reject": [
+                    null
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
