@@ -1,0 +1,40 @@
+---
+interface:
+- name: ge-0/0/1
+  mtu: 2030
+  description: to PE-1
+- name: ge-0/0/2
+  mtu: 2030
+  description: to PE-2
+  unit:
+  - name: 0
+    family:
+      inet:
+        address:
+        - name: 10.172.0.1/24
+- name: ge-0/0/3
+  description: Spine-1 ge-0/0/4
+  vlan-tagging:
+  -
+  unit:
+  - name: 1001
+    vlan-id: 1001
+    description: to Spine-1 Vlan 1001
+    family:
+      inet:
+        address:
+        - name: 192.168.10.11/24
+  - name: 1002
+    vlan-id: 1002
+    description: to Spine-1 Vlan 1002
+    family:
+      inet:
+        address:
+        - name: 192.168.30.12/24
+  - name: 1003
+    vlan-id: 1003
+    description: to Spine-1 Vlan 1003
+    family:
+      inet:
+        address:
+        - name: 192.168.30.13/24
