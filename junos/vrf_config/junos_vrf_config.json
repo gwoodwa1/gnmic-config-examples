@@ -1,0 +1,69 @@
+{
+  "instance": [
+    {
+      "name": "mgmt_network_dc",
+      "instance-type": "vrf",
+      "route-distinguisher": {
+        "rd-type": "6500:200"
+      },
+      "vrf-target": {
+        "community": "target:65002:20000"
+      },
+      "routing-options": {
+        "autonomous-system": {
+          "as-number": "65002"
+        },
+        "router-id": "172.10.10.1"
+      },
+      "vrf-table-label": [
+        null
+      ],
+      "protocols": {
+        "bgp": {
+          "group": [
+            {
+              "name": "peer to route-reflector",
+              "type": "internal",
+              "local-address": "172.10.10.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "dmz_network_dc",
+      "instance-type": "vrf",
+      "interface": [
+        {
+          "name": "ge-0/0/3.1002"
+        }
+      ],
+      "route-distinguisher": {
+        "rd-type": "6500:300"
+      },
+      "vrf-target": {
+        "community": "target:65003:30000"
+      },
+      "routing-options": {
+        "autonomous-system": {
+          "as-number": "65002"
+        },
+        "router-id": "172.10.10.2"
+      },
+      "vrf-table-label": [
+        null
+      ],
+      "protocols": {
+        "bgp": {
+          "group": [
+            {
+              "name": "peer to route-reflector",
+              "type": "internal",
+              "local-address": "172.10.10.1"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
