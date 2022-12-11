@@ -1,0 +1,61 @@
+---
+interfaces:
+  interface:
+  - name: ge-0/0/4
+    encapsulation: flexible-ethernet-services
+    flexible-vlan-tagging:
+    -
+    unit:
+    - name: 50
+      description: DC_EVPN
+      encapsulation: vlan-bridge
+      family:
+        bridge:
+        -
+      vlan-id: 50
+routing-options:
+  autonomous-system:
+    as-number: '65004'
+protocols:
+  bgp:
+    group:
+    - name: route-reflector-peering
+      type: internal
+      family:
+        evpn:
+          signaling:
+          -
+      local-address: 10.10.10.1
+      neighbor:
+      - name: 10.10.10.2
+        authentication-key: "$9$CVAyuOIyrKvWXVwGjHmQz"
+        peer-as: '65004'
+        description: Primary Route Reflector
+      - name: 10.10.10.3
+        authentication-key: "$9$CVAyuOIyrKvWXVwGjHmQz"
+        peer-as: '65004'
+        description: Secondary Route Reflector
+      - name: 10.10.10.3
+        authentication-key: "$9$CVAyuOIyrKvWXVwGjHmQz"
+        peer-as: '65004'
+        description: Tietary Route Reflector
+  
+  mpls:
+    interface:
+    - name: all
+    
+routing-instances:
+  instance:
+  - name: evpn_vlan-based
+    instance-type: evpn
+    interface:
+    - name: ge-0/0/4.50
+
+    protocols:
+      evpn:
+      -
+    route-distinguisher:
+      rd-type: '65004:4'
+    vlan-id: 50
+    vrf-target:
+      community: target:65004:4
