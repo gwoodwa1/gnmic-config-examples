@@ -25,7 +25,7 @@ gnmic --encoding json_ietf \
  
  You will use a GNMI set operation to apply this configuration to the device. 
  Note this is a merge operation so if there is existing configuration then there may be a conflict
- Please can the credentials and GNMI Port as appropriate for your setup
+ Please change the credentials and GNMI Port as appropriate for your setup
 
 ```
 gnmic -a 172.21.20.7:57400 -u admin -p admin@123 \
