@@ -1,0 +1,3099 @@
+replaces:
+- path: /configuration/firewall
+  value:
+    apply-groups: []
+    apply-groups-except: []
+    apply-macro:
+    - data:
+      - {}
+    atm-policer:
+    - apply-macro:
+      - data:
+        - {}
+    family:
+      any:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-mac-address:
+              - {}
+              ether-type: []
+              ether-type-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              interface:
+              - {}
+              interface-set:
+              - {}
+              ip-version:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                ipv4:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  dscp: []
+                  dscp-except: []
+                  icmp-code: []
+                  icmp-code-except: []
+                  icmp-type: []
+                  icmp-type-except: []
+                  ip-address:
+                  - {}
+                  ip-destination-address:
+                  - {}
+                  ip-precedence: []
+                  ip-precedence-except: []
+                  ip-protocol: []
+                  ip-protocol-except: []
+                  ip-source-address:
+                  - {}
+                  is-fragment: []
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                  tcp-established: []
+                  tcp-flags: []
+                  tcp-initial: []
+                  ttl: []
+                  ttl-except: []
+                ipv6:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  hop-limit: []
+                  hop-limit-except: []
+                  icmp-code: []
+                  icmp-code-except: []
+                  icmp-type: []
+                  icmp-type-except: []
+                  ip6-address:
+                  - {}
+                  ip6-destination-address:
+                  - {}
+                  ip6-source-address:
+                  - {}
+                  next-header: []
+                  next-header-except: []
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                  tcp-established: []
+                  tcp-flags: []
+                  tcp-initial: []
+                  traffic-class: []
+                  traffic-class-except: []
+              learn-vlan-1p-priority: []
+              learn-vlan-1p-priority-except: []
+              learn-vlan-id: []
+              learn-vlan-id-except: []
+              loss-priority: []
+              loss-priority-except: []
+              mpls-bottom-of-stack: []
+              mpls-forwarding-class: []
+              mpls-forwarding-class-except: []
+              mpls-label:
+              - apply-macro:
+                - data:
+                  - {}
+              packet-length: []
+              packet-length-except: []
+              policy-map: []
+              policy-map-except: []
+              service-filter-hit: []
+              slice: []
+              slice-except: []
+              source-mac-address:
+              - {}
+              user-vlan-1p-priority: []
+              user-vlan-1p-priority-except: []
+              user-vlan-id: []
+              user-vlan-id-except: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              clear-policy-map: []
+              count: []
+              discard: []
+              encapsulate:
+                tunnel-end-point: []
+              force-premium: []
+              forwarding-class: []
+              hierarchical-policer: []
+              inline-monitoring-instance: []
+              log: []
+              loss-priority: []
+              next: []
+              policer: []
+              policy-map: []
+              port-mirror: []
+              port-mirror-instance: []
+              redirect: []
+              routing-instance:
+                routing-instance-name: []
+                topology: []
+              service-accounting: []
+              service-accounting-deferred: []
+              service-filter-hit: []
+              slice: []
+              syslog: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+      bridge:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-mac-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              dscp: []
+              dscp-except: []
+              ether-type: []
+              ether-type-except: []
+              flexible-match-mask:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-mask-name: []
+                mask-in-hex: []
+                match-start: []
+                prefix: []
+              flexible-match-range:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-range-name: []
+                match-start: []
+                range: []
+                range-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              interface:
+              - {}
+              interface-group: []
+              interface-group-except: []
+              interface-set:
+              - {}
+              ip-address:
+              - {}
+              ip-destination-address:
+              - {}
+              ip-precedence: []
+              ip-precedence-except: []
+              ip-protocol: []
+              ip-protocol-except: []
+              ip-source-address:
+              - {}
+              ipv6-address:
+              - {}
+              ipv6-destination-address:
+              - {}
+              ipv6-destination-prefix-list:
+              - {}
+              ipv6-next-header: []
+              ipv6-next-header-except: []
+              ipv6-payload-protocol: []
+              ipv6-payload-protocol-except: []
+              ipv6-prefix-list:
+              - {}
+              ipv6-source-address:
+              - {}
+              ipv6-source-prefix-list:
+              - {}
+              ipv6-traffic-class: []
+              ipv6-traffic-class-except: []
+              isid: []
+              isid-dei: []
+              isid-dei-except: []
+              isid-except: []
+              isid-priority-code-point: []
+              isid-priority-code-point-except: []
+              learn-vlan-1p-priority: []
+              learn-vlan-1p-priority-except: []
+              learn-vlan-dei: []
+              learn-vlan-dei-except: []
+              learn-vlan-id: []
+              learn-vlan-id-except: []
+              loss-priority: []
+              loss-priority-except: []
+              policy-map: []
+              policy-map-except: []
+              port: []
+              port-except: []
+              prefix-list:
+              - {}
+              slice: []
+              slice-except: []
+              source-mac-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-flags: []
+              traffic-type: []
+              traffic-type-except: []
+              user-vlan-1p-priority: []
+              user-vlan-1p-priority-except: []
+              user-vlan-id: []
+              user-vlan-id-except: []
+              vlan-ether-type: []
+              vlan-ether-type-except: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              clear-policy-map: []
+              count: []
+              discard: []
+              forwarding-class: []
+              forwarding-policy:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                uplink-select: []
+              hierarchical-policer: []
+              inline-monitoring-instance: []
+              log: []
+              loss-priority: []
+              next: []
+              next-hop-group: []
+              policer: []
+              policy-map: []
+              port-mirror: []
+              port-mirror-instance: []
+              sample: []
+              slice: []
+              syslog: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+      ccc:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-mac-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              dscp: []
+              dscp-except: []
+              ether-type: []
+              ether-type-except: []
+              flexible-match-mask:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-mask-name: []
+                mask-in-hex: []
+                match-start: []
+                prefix: []
+              flexible-match-range:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-range-name: []
+                match-start: []
+                range: []
+                range-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              interface:
+              - {}
+              interface-group: []
+              interface-group-except: []
+              ip-destination-address:
+              - {}
+              ip-precedence: []
+              ip-precedence-except: []
+              ip-protocol: []
+              ip-protocol-except: []
+              ip-source-address:
+              - {}
+              ip-version:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                ipv4:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  dscp: []
+                  dscp-except: []
+                  icmp-code: []
+                  icmp-code-except: []
+                  icmp-type: []
+                  icmp-type-except: []
+                  ip-destination-address:
+                  - {}
+                  ip-precedence: []
+                  ip-protocol: []
+                  ip-protocol-except: []
+                  ip-source-address:
+                  - {}
+                  is-fragment: []
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                  tcp-established: []
+                  tcp-flags: []
+                  tcp-initial: []
+                  traffic-class: []
+                  traffic-class-except: []
+                ipv6:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  icmp-code: []
+                  icmp-code-except: []
+                  icmp-type: []
+                  icmp-type-except: []
+                  ip6-destination-address:
+                  - {}
+                  ip6-source-address:
+                  - {}
+                  next-header: []
+                  next-header-except: []
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                  tcp-established: []
+                  tcp-flags: []
+                  tcp-initial: []
+                  traffic-class: []
+                  traffic-class-except: []
+              is-host-packet: []
+              learn-vlan-1p-priority: []
+              learn-vlan-1p-priority-except: []
+              learn-vlan-id: []
+              learn-vlan-id-except: []
+              loss-priority: []
+              loss-priority-except: []
+              mpls-bottom-of-stack: []
+              mpls-forwarding-class: []
+              mpls-forwarding-class-except: []
+              mpls-label:
+              - apply-macro:
+                - data:
+                  - {}
+              packet-length: []
+              packet-length-except: []
+              policy-map: []
+              policy-map-except: []
+              slice: []
+              slice-except: []
+              source-mac-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              user-vlan-1p-priority: []
+              user-vlan-1p-priority-except: []
+              user-vlan-id: []
+              user-vlan-id-except: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              clear-policy-map: []
+              count: []
+              discard: []
+              encapsulate:
+                tunnel-end-point: []
+              force-premium: []
+              forwarding-class: []
+              hierarchical-policer: []
+              inline-monitoring-instance: []
+              log: []
+              loss-priority: []
+              next: []
+              next-hop-group: []
+              packet-mode: []
+              policer: []
+              policy-map: []
+              port-mirror: []
+              port-mirror-instance: []
+              slice: []
+              syslog: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+      ethernet-switching:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              address:
+              - {}
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              arp-type: []
+              destination-address:
+              - {}
+              destination-mac-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              dot1q-tag: []
+              dot1q-tag-except: []
+              dot1q-user-priority: []
+              dot1q-user-priority-except: []
+              dscp: []
+              dscp-except: []
+              ether-type: []
+              ether-type-except: []
+              flexible-match-mask:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-mask-name: []
+                mask-in-hex: []
+                match-start: []
+                prefix: []
+              flexible-match-range:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-range-name: []
+                match-start: []
+                range: []
+                range-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              fragment-flags: []
+              gbp-dst-tag: []
+              gbp-src-tag: []
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              interface:
+              - {}
+              interface-group: []
+              interface-group-except: []
+              interface-set:
+              - {}
+              ip-address:
+              - {}
+              ip-destination-address:
+              - {}
+              ip-options: []
+              ip-options-except: []
+              ip-precedence: []
+              ip-precedence-except: []
+              ip-protocol: []
+              ip-protocol-except: []
+              ip-source-address:
+              - {}
+              ip-version:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                ipv4:
+                  address:
+                  - {}
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  dscp: []
+                  dscp-except: []
+                  fragment-flags: []
+                  icmp-code: []
+                  icmp-code-except: []
+                  icmp-type: []
+                  icmp-type-except: []
+                  ip-destination-address:
+                  - {}
+                  ip-options: []
+                  ip-options-except: []
+                  ip-precedence: []
+                  ip-precedence-except: []
+                  ip-protocol: []
+                  ip-protocol-except: []
+                  ip-source-address:
+                  - {}
+                  is-fragment: []
+                  port: []
+                  port-except: []
+                  precedence-except: []
+                  protocol-except: []
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                  tcp-established: []
+                  tcp-flags: []
+                  tcp-initial: []
+                ipv6:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  extension-header: []
+                  extension-header-except: []
+                  icmp-code: []
+                  icmp-code-except: []
+                  icmp-type: []
+                  icmp-type-except: []
+                  ip6-destination-address:
+                  - {}
+                  ip6-source-address:
+                  - {}
+                  next-header: []
+                  next-header-except: []
+                  payload-protocol: []
+                  payload-protocol-except: []
+                  port: []
+                  port-except: []
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                  tcp-established: []
+                  tcp-flags: []
+                  tcp-initial: []
+                  traffic-class: []
+                  traffic-class-except: []
+              ipv6-address:
+              - {}
+              ipv6-destination-address:
+              - {}
+              ipv6-destination-prefix-list:
+              - {}
+              ipv6-next-header: []
+              ipv6-next-header-except: []
+              ipv6-payload-protocol: []
+              ipv6-payload-protocol-except: []
+              ipv6-prefix-list:
+              - {}
+              ipv6-source-address:
+              - {}
+              ipv6-source-prefix-list:
+              - {}
+              ipv6-traffic-class: []
+              ipv6-traffic-class-except: []
+              is-fragment: []
+              isid: []
+              isid-dei: []
+              isid-dei-except: []
+              isid-except: []
+              isid-priority-code-point: []
+              isid-priority-code-point-except: []
+              l2-encap-type: []
+              l2-encap-type-except: []
+              learn-vlan-1p-priority: []
+              learn-vlan-1p-priority-except: []
+              learn-vlan-dei: []
+              learn-vlan-dei-except: []
+              learn-vlan-id: []
+              learn-vlan-id-except: []
+              loss-priority: []
+              loss-priority-except: []
+              packet-length: []
+              packet-length-except: []
+              port: []
+              port-except: []
+              precedence: []
+              precedence-except: []
+              prefix-list:
+              - {}
+              protocol: []
+              protocol-except: []
+              source-address:
+              - {}
+              source-mac-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-established: []
+              tcp-flags: []
+              tcp-initial: []
+              traffic-type: []
+              traffic-type-except: []
+              user-vlan-1p-priority: []
+              user-vlan-1p-priority-except: []
+              user-vlan-id: []
+              user-vlan-id-except: []
+              vlan: []
+              vlan-ether-type: []
+              vlan-ether-type-except: []
+              vlan-except: []
+              vxlan:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                flags:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  mask-in-hex: []
+                  value: []
+                rsvd1: []
+                rsvd1-except: []
+                rsvd2: []
+                rsvd2-except: []
+                vni: []
+                vni-except: []
+            then:
+              accept: []
+              analyzer: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              count: []
+              discard: []
+              flood: []
+              forwarding-class: []
+              gbp-src-tag: []
+              hierarchical-policer: []
+              inband-flow-telemetry-init: []
+              inband-flow-telemetry-terminate: []
+              inline-monitoring-instance: []
+              interface: []
+              log: []
+              loss-priority: []
+              next: []
+              next-hop-group: []
+              packet-capture: []
+              pkt-trace: []
+              policer: []
+              port-mirror: []
+              port-mirror-instance: []
+              syslog: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+              vlan: []
+              vxlan:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                flags: []
+                rsvd1: []
+                rsvd2: []
+      evpn:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-mac-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              dscp: []
+              dscp-except: []
+              ether-type: []
+              ether-type-except: []
+              flexible-match-mask:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-mask-name: []
+                mask-in-hex: []
+                match-start: []
+                prefix: []
+              flexible-match-range:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-range-name: []
+                match-start: []
+                range: []
+                range-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              interface:
+              - {}
+              interface-group: []
+              interface-group-except: []
+              interface-set:
+              - {}
+              ip-address:
+              - {}
+              ip-destination-address:
+              - {}
+              ip-precedence: []
+              ip-precedence-except: []
+              ip-protocol: []
+              ip-protocol-except: []
+              ip-source-address:
+              - {}
+              ipv6-address:
+              - {}
+              ipv6-destination-address:
+              - {}
+              ipv6-destination-prefix-list:
+              - {}
+              ipv6-next-header: []
+              ipv6-next-header-except: []
+              ipv6-payload-protocol: []
+              ipv6-payload-protocol-except: []
+              ipv6-prefix-list:
+              - {}
+              ipv6-source-address:
+              - {}
+              ipv6-source-prefix-list:
+              - {}
+              ipv6-traffic-class: []
+              ipv6-traffic-class-except: []
+              learn-vlan-1p-priority: []
+              learn-vlan-1p-priority-except: []
+              learn-vlan-dei: []
+              learn-vlan-dei-except: []
+              learn-vlan-id: []
+              learn-vlan-id-except: []
+              loss-priority: []
+              loss-priority-except: []
+              policy-map: []
+              policy-map-except: []
+              port: []
+              port-except: []
+              prefix-list:
+              - {}
+              slice: []
+              slice-except: []
+              source-mac-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-flags: []
+              traffic-type: []
+              traffic-type-except: []
+              user-vlan-1p-priority: []
+              user-vlan-1p-priority-except: []
+              user-vlan-id: []
+              user-vlan-id-except: []
+              vlan-ether-type: []
+              vlan-ether-type-except: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              clear-policy-map: []
+              count: []
+              discard: []
+              forwarding-class: []
+              hierarchical-policer: []
+              inline-monitoring-instance: []
+              log: []
+              loss-priority: []
+              next: []
+              next-hop-group: []
+              policer: []
+              policy-map: []
+              port-mirror: []
+              port-mirror-instance: []
+              sample: []
+              slice: []
+              syslog: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+      inet:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dialer-filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              address:
+              - {}
+              ah-spi: []
+              ah-spi-except: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              dscp: []
+              dscp-except: []
+              esp-spi: []
+              esp-spi-except: []
+              first-fragment: []
+              fragment-flags: []
+              fragment-offset: []
+              fragment-offset-except: []
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              ip-options: []
+              ip-options-except: []
+              is-fragment: []
+              packet-length: []
+              packet-length-except: []
+              port: []
+              port-except: []
+              precedence: []
+              precedence-except: []
+              prefix-list:
+              - {}
+              protocol: []
+              protocol-except: []
+              source-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-established: []
+              tcp-flags: []
+              tcp-initial: []
+              ttl: []
+              ttl-except: []
+            then:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              ignore: []
+              log: []
+              note: []
+              sample: []
+              syslog: []
+        fast-update-filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+                address: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+              destination-port:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              dscp:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              match-terms: []
+              protocol:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              source-address:
+                address: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+              source-port:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+            then:
+              accept: []
+              action-terms: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              count: []
+              discard: []
+              forwarding-class: []
+              log: []
+              loss-priority: []
+              policer: []
+              port-mirror: []
+              routing-instance:
+                routing-instance-name: []
+                topology: []
+              service-accounting: []
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              address:
+              - {}
+              ah-spi: []
+              ah-spi-except: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+              - {}
+              destination-class: []
+              destination-class-except: []
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              dscp: []
+              dscp-except: []
+              esp-spi: []
+              esp-spi-except: []
+              first-fragment: []
+              flexible-match-mask:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-mask-name: []
+                mask-in-hex: []
+                match-start: []
+                prefix: []
+              flexible-match-range:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-range-name: []
+                match-start: []
+                range: []
+                range-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              fragment-flags: []
+              fragment-offset: []
+              fragment-offset-except: []
+              gre-key: []
+              gre-key-except: []
+              gtp-header:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                gtp-teid: []
+                ipv4:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-address:
+                  - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  protocol: []
+                  protocol-except: []
+                  source-address:
+                  - {}
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                ipv6:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-address:
+                  - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  next-header: []
+                  next-header-except: []
+                  source-address:
+                  - {}
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              interface:
+              - {}
+              interface-group: []
+              interface-group-except: []
+              interface-set:
+              - {}
+              ip-options: []
+              ip-options-except: []
+              is-fragment: []
+              loss-priority: []
+              loss-priority-except: []
+              packet-length: []
+              packet-length-except: []
+              policy-map: []
+              policy-map-except: []
+              port: []
+              port-except: []
+              precedence: []
+              precedence-except: []
+              prefix-list:
+              - {}
+              protocol: []
+              protocol-except: []
+              rat-type: []
+              rat-type-except: []
+              redirect-reason: []
+              redirect-reason-except: []
+              service-filter-hit: []
+              slice: []
+              slice-except: []
+              source-address:
+              - {}
+              source-class: []
+              source-class-except: []
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-established: []
+              tcp-flags: []
+              tcp-initial: []
+              ttl: []
+              ttl-except: []
+              vxlan:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                flags:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  mask-in-hex: []
+                  value: []
+                rsvd1: []
+                rsvd1-except: []
+                rsvd2: []
+                rsvd2-except: []
+                vni: []
+                vni-except: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              clear-policy-map: []
+              count: []
+              decapsulate:
+                gre:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  routing-instance:
+                    routing-instance-name: []
+                  sample: []
+                gre-in-udp:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  routing-instance:
+                    routing-instance-name: []
+                  sample: []
+                ipip:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  routing-instance:
+                    routing-instance-name: []
+                  sample: []
+                l2tp:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  cookie: []
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  output-interface: []
+                  sample: []
+                mpls-in-udp:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  routing-instance:
+                    routing-instance-name: []
+                  sample: []
+              discard:
+                accounting: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+              dont-fragment: []
+              dscp: []
+              encapsulate:
+                tunnel-end-point: []
+              exclude-accounting: []
+              force-premium: []
+              forwarding-class: []
+              hierarchical-policer: []
+              inband-flow-telemetry-init: []
+              inband-flow-telemetry-terminate: []
+              inline-monitoring-instance: []
+              ipsec-sa: []
+              l2-mirror: []
+              load-balance: []
+              log: []
+              logical-system:
+              - routing-instance:
+                  routing-instance-name: []
+                  topology: []
+              loss-priority: []
+              next: []
+              next-hop-group: []
+              next-interface:
+                accept: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                interface-name: []
+                next: []
+                routing-instance:
+                  routing-instance-name: []
+                  topology: []
+              next-ip:
+                address: []
+                routing-instance:
+                  routing-instance-name: []
+                  topology: []
+              packet-capture: []
+              packet-mode: []
+              policer: []
+              policy-map: []
+              port-mirror: []
+              port-mirror-instance: []
+              prefix-action: []
+              redirect: []
+              reject:
+                administratively-prohibited: []
+                bad-host-tos: []
+                bad-network-tos: []
+                fragmentation-needed: []
+                host-prohibited: []
+                host-unknown: []
+                host-unreachable: []
+                network-prohibited: []
+                network-unknown: []
+                network-unreachable: []
+                port-unreachable: []
+                precedence-cutoff: []
+                precedence-violation: []
+                protocol-unreachable: []
+                source-host-isolated: []
+                source-route-failed: []
+                tcp-reset: []
+              routing-instance:
+                routing-instance-name: []
+                topology: []
+              sample: []
+              service-accounting: []
+              service-accounting-deferred: []
+              service-filter-hit: []
+              skip-services: []
+              slice: []
+              syslog: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+              topology: []
+              traffic-class-count: []
+              virtual-channel: []
+        prefix-action:
+        - apply-macro:
+          - data:
+            - {}
+          case_1: []
+          case_2: []
+        service-filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              address:
+              - {}
+              ah-spi: []
+              ah-spi-except: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              esp-spi: []
+              esp-spi-except: []
+              first-fragment: []
+              forwarding-class: []
+              forwarding-class-except: []
+              fragment-flags: []
+              fragment-offset: []
+              fragment-offset-except: []
+              interface-group: []
+              interface-group-except: []
+              ip-options: []
+              ip-options-except: []
+              is-fragment: []
+              loss-priority: []
+              loss-priority-except: []
+              port: []
+              port-except: []
+              prefix-list:
+              - {}
+              protocol: []
+              protocol-except: []
+              redirect-reason: []
+              redirect-reason-except: []
+              source-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-flags: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              count: []
+              log: []
+              port-mirror: []
+              sample: []
+              service: []
+              skip: []
+        simple-filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+                address: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+              destination-port:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              forwarding-class: []
+              protocol:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              source-address:
+                address: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+              source-port:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              discard: []
+              forwarding-class: []
+              loss-priority: []
+              policer: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-rate: []
+                two-rate: []
+      inet6:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dialer-filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              address:
+              - {}
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              next-header: []
+              next-header-except: []
+              packet-length: []
+              packet-length-except: []
+              port: []
+              port-except: []
+              prefix-list:
+              - {}
+              source-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+            then:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              ignore: []
+              log: []
+              note: []
+              sample: []
+              syslog: []
+        fast-update-filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+                address: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+              destination-port:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              match-terms: []
+              next-header:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              payload-protocol:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              source-address:
+                address: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+              source-port:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+              traffic-class:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                value_keyword: []
+            then:
+              accept: []
+              action-terms: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              count: []
+              discard: []
+              forwarding-class: []
+              log: []
+              loss-priority: []
+              policer: []
+              port-mirror: []
+              routing-instance:
+                routing-instance-name: []
+                topology: []
+              service-accounting: []
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              address:
+              - {}
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+              - {}
+              destination-class: []
+              destination-class-except: []
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              extension-header: []
+              extension-header-except: []
+              first-fragment: []
+              flexible-match-mask:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-mask-name: []
+                mask-in-hex: []
+                match-start: []
+                prefix: []
+              flexible-match-range:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-range-name: []
+                match-start: []
+                range: []
+                range-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              gre-key: []
+              gre-key-except: []
+              gtp-header:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                gtp-teid: []
+                ipv4:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-address:
+                  - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  protocol: []
+                  protocol-except: []
+                  source-address:
+                  - {}
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                ipv6:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-address:
+                  - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  next-header: []
+                  next-header-except: []
+                  source-address:
+                  - {}
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+              hop-limit: []
+              hop-limit-except: []
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              interface:
+              - {}
+              interface-group: []
+              interface-group-except: []
+              interface-set:
+              - {}
+              is-fragment: []
+              last-fragment: []
+              loss-priority: []
+              loss-priority-except: []
+              next-header: []
+              next-header-except: []
+              packet-length: []
+              packet-length-except: []
+              payload-protocol: []
+              payload-protocol-except: []
+              policy-map: []
+              policy-map-except: []
+              port: []
+              port-except: []
+              prefix-list:
+              - {}
+              service-filter-hit: []
+              slice: []
+              slice-except: []
+              source-address:
+              - {}
+              source-class: []
+              source-class-except: []
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-established: []
+              tcp-flags: []
+              tcp-initial: []
+              traffic-class: []
+              traffic-class-except: []
+              vxlan:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                flags:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  mask-in-hex: []
+                  value: []
+                rsvd1: []
+                rsvd1-except: []
+                rsvd2: []
+                rsvd2-except: []
+                vni: []
+                vni-except: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              clear-policy-map: []
+              count: []
+              decapsulate:
+                gre:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  routing-instance:
+                    routing-instance-name: []
+                  sample: []
+                gre-in-udp:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  routing-instance:
+                    routing-instance-name: []
+                  sample: []
+                ipip:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  routing-instance:
+                    routing-instance-name: []
+                  sample: []
+                l2tp:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  cookie: []
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  output-interface: []
+                  sample: []
+                mpls-in-udp:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  forwarding-class: []
+                  interface-group: []
+                  no-decrement-ttl: []
+                  routing-instance:
+                    routing-instance-name: []
+                  sample: []
+              discard: []
+              encapsulate:
+                tunnel-end-point: []
+              exclude-accounting: []
+              force-premium: []
+              forwarding-class: []
+              hierarchical-policer: []
+              inband-flow-telemetry-init: []
+              inband-flow-telemetry-terminate: []
+              inline-monitoring-instance: []
+              l2-mirror: []
+              log: []
+              logical-system:
+              - routing-instance:
+                  routing-instance-name: []
+                  topology: []
+              loss-priority: []
+              next: []
+              next-hop-group: []
+              next-interface:
+                accept: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                interface-name: []
+                next: []
+                routing-instance:
+                  routing-instance-name: []
+                  topology: []
+              next-ip6:
+                address: []
+                routing-instance:
+                  routing-instance-name: []
+                  topology: []
+              packet-capture: []
+              packet-mode: []
+              policer: []
+              policy-map: []
+              port-mirror: []
+              port-mirror-instance: []
+              redirect: []
+              reject:
+                address-unreachable: []
+                administratively-prohibited: []
+                bad-host-tos: []
+                bad-network-tos: []
+                beyond-scope: []
+                host-prohibited: []
+                host-unknown: []
+                host-unreachable: []
+                network-prohibited: []
+                network-unknown: []
+                network-unreachable: []
+                no-route: []
+                policy-failed: []
+                port-unreachable: []
+                precedence-cutoff: []
+                precedence-violation: []
+                protocol-unreachable: []
+                reject-route: []
+                source-host-isolated: []
+                source-route-failed: []
+                tcp-reset: []
+              routing-instance:
+                routing-instance-name: []
+                topology: []
+              sample: []
+              service-accounting: []
+              service-accounting-deferred: []
+              service-filter-hit: []
+              skip-services: []
+              slice: []
+              syslog: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+              topology: []
+              traffic-class: []
+              traffic-class-count: []
+        service-filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              address:
+              - {}
+              ah-spi: []
+              ah-spi-except: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              esp-spi: []
+              esp-spi-except: []
+              extension-header: []
+              extension-header-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              interface-group: []
+              interface-group-except: []
+              loss-priority: []
+              loss-priority-except: []
+              next-header: []
+              next-header-except: []
+              payload-protocol: []
+              payload-protocol-except: []
+              port: []
+              port-except: []
+              prefix-list:
+              - {}
+              source-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-flags: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              count: []
+              log: []
+              port-mirror: []
+              sample: []
+              service: []
+              skip: []
+      mpls:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dialer-filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              exp: []
+              exp-except: []
+            then:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              ignore: []
+              log: []
+              note: []
+              sample: []
+              syslog: []
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              bottom-of-stack0: []
+              bottom-of-stack1: []
+              exp: []
+              exp-except: []
+              exp0: []
+              exp0-except: []
+              exp1: []
+              exp1-except: []
+              flexible-match-mask:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-mask-name: []
+                mask-in-hex: []
+                match-start: []
+                prefix: []
+              flexible-match-range:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-range-name: []
+                match-start: []
+                range: []
+                range-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              interface:
+              - {}
+              interface-group: []
+              interface-group-except: []
+              interface-set:
+              - {}
+              ip-version:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                ipv4:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-address:
+                  - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  dscp: []
+                  dscp-except: []
+                  first-fragment: []
+                  fragment-flags: []
+                  fragment-offset: []
+                  fragment-offset-except: []
+                  icmp-code: []
+                  icmp-code-except: []
+                  icmp-type: []
+                  icmp-type-except: []
+                  ip-address:
+                  - {}
+                  ip-destination-address:
+                  - {}
+                  ip-options: []
+                  ip-options-except: []
+                  ip-protocol: []
+                  ip-protocol-except: []
+                  ip-source-address:
+                  - {}
+                  is-fragment: []
+                  packet-length: []
+                  packet-length-except: []
+                  port: []
+                  port-except: []
+                  prefix-list:
+                  - {}
+                  protocol:
+                  - apply-macro:
+                    - data:
+                      - {}
+                    case_1: []
+                    case_2: []
+                  source-address:
+                  - {}
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                  tcp-established: []
+                  tcp-flags: []
+                  tcp-initial: []
+                  ttl: []
+                  ttl-except: []
+                ipv6:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  destination-address:
+                  - {}
+                  destination-port: []
+                  destination-port-except: []
+                  destination-prefix-list:
+                  - {}
+                  hop-limit: []
+                  hop-limit-except: []
+                  icmp-code: []
+                  icmp-code-except: []
+                  icmp-type: []
+                  icmp-type-except: []
+                  ip6-address:
+                  - {}
+                  ip6-destination-address:
+                  - {}
+                  ip6-source-address:
+                  - {}
+                  next-header: []
+                  next-header-except: []
+                  packet-length: []
+                  packet-length-except: []
+                  port: []
+                  port-except: []
+                  prefix-list:
+                  - {}
+                  protocol:
+                  - apply-macro:
+                    - data:
+                      - {}
+                    case_1: []
+                    case_2: []
+                  source-address:
+                  - {}
+                  source-port: []
+                  source-port-except: []
+                  source-prefix-list:
+                  - {}
+                  tcp-established: []
+                  tcp-flags: []
+                  tcp-initial: []
+                  traffic-class: []
+                  traffic-class-except: []
+              label:
+              - apply-macro:
+                - data:
+                  - {}
+              label0:
+              - apply-macro:
+                - data:
+                  - {}
+              label0-except:
+              - apply-macro:
+                - data:
+                  - {}
+              label1:
+              - apply-macro:
+                - data:
+                  - {}
+              label1-except:
+              - apply-macro:
+                - data:
+                  - {}
+              loss-priority: []
+              loss-priority-except: []
+              policy-map: []
+              policy-map-except: []
+              slice: []
+              slice-except: []
+              ttl-except: []
+              ttl0: []
+              ttl0-except: []
+              ttl1: []
+              ttl1-except: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              clear-policy-map: []
+              count: []
+              discard: []
+              encapsulate:
+                tunnel-end-point: []
+              forwarding-class: []
+              hierarchical-policer: []
+              inline-monitoring-instance: []
+              loss-priority: []
+              next: []
+              packet-mode: []
+              policer: []
+              policy-map: []
+              port-mirror: []
+              port-mirror-instance: []
+              routing-instance:
+                routing-instance-name: []
+                topology: []
+              sample: []
+              slice: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+              traffic-class-count: []
+      vpls:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        filter:
+        - apply-macro:
+          - data:
+            - {}
+          term:
+          - apply-macro:
+            - data:
+              - {}
+            from:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-mac-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              dscp: []
+              dscp-except: []
+              ether-type: []
+              ether-type-except: []
+              flexible-match-mask:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-mask-name: []
+                mask-in-hex: []
+                match-start: []
+                prefix: []
+              flexible-match-range:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                bit-length: []
+                bit-offset: []
+                byte-offset: []
+                flexible-range-name: []
+                match-start: []
+                range: []
+                range-except: []
+              forwarding-class: []
+              forwarding-class-except: []
+              icmp-code: []
+              icmp-code-except: []
+              icmp-type: []
+              icmp-type-except: []
+              interface:
+              - {}
+              interface-group: []
+              interface-group-except: []
+              interface-set:
+              - {}
+              ip-address:
+              - {}
+              ip-destination-address:
+              - {}
+              ip-precedence: []
+              ip-precedence-except: []
+              ip-protocol: []
+              ip-protocol-except: []
+              ip-source-address:
+              - {}
+              ipv6-address:
+              - {}
+              ipv6-destination-address:
+              - {}
+              ipv6-destination-prefix-list:
+              - {}
+              ipv6-next-header: []
+              ipv6-next-header-except: []
+              ipv6-payload-protocol: []
+              ipv6-payload-protocol-except: []
+              ipv6-prefix-list:
+              - {}
+              ipv6-source-address:
+              - {}
+              ipv6-source-prefix-list:
+              - {}
+              ipv6-traffic-class: []
+              ipv6-traffic-class-except: []
+              learn-vlan-1p-priority: []
+              learn-vlan-1p-priority-except: []
+              learn-vlan-dei: []
+              learn-vlan-dei-except: []
+              learn-vlan-id: []
+              learn-vlan-id-except: []
+              loss-priority: []
+              loss-priority-except: []
+              policy-map: []
+              policy-map-except: []
+              port: []
+              port-except: []
+              prefix-list:
+              - {}
+              slice: []
+              slice-except: []
+              source-mac-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+              tcp-flags: []
+              traffic-type: []
+              traffic-type-except: []
+              user-vlan-1p-priority: []
+              user-vlan-1p-priority-except: []
+              user-vlan-id: []
+              user-vlan-id-except: []
+              vlan-ether-type: []
+              vlan-ether-type-except: []
+            then:
+              accept: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              clear-policy-map: []
+              count: []
+              discard: []
+              forwarding-class: []
+              hierarchical-policer: []
+              inline-monitoring-instance: []
+              log: []
+              loss-priority: []
+              next: []
+              next-hop-group: []
+              policer: []
+              policy-map: []
+              port-mirror: []
+              port-mirror-instance: []
+              sample: []
+              slice: []
+              syslog: []
+              three-color-policer:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                single-packet-rate: []
+                single-rate: []
+                two-packet-rate: []
+                two-rate: []
+    filter:
+    - apply-macro:
+      - data:
+        - {}
+      term:
+      - apply-macro:
+        - data:
+          - {}
+        from:
+          address:
+          - {}
+          ah-spi: []
+          ah-spi-except: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          destination-address:
+          - {}
+          destination-class: []
+          destination-class-except: []
+          destination-port: []
+          destination-port-except: []
+          destination-prefix-list:
+          - {}
+          dscp: []
+          dscp-except: []
+          esp-spi: []
+          esp-spi-except: []
+          first-fragment: []
+          flexible-match-mask:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            bit-length: []
+            bit-offset: []
+            byte-offset: []
+            flexible-mask-name: []
+            mask-in-hex: []
+            match-start: []
+            prefix: []
+          flexible-match-range:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            bit-length: []
+            bit-offset: []
+            byte-offset: []
+            flexible-range-name: []
+            match-start: []
+            range: []
+            range-except: []
+          forwarding-class: []
+          forwarding-class-except: []
+          fragment-flags: []
+          fragment-offset: []
+          fragment-offset-except: []
+          gre-key: []
+          gre-key-except: []
+          gtp-header:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            gtp-teid: []
+            ipv4:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              protocol: []
+              protocol-except: []
+              source-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+            ipv6:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              destination-address:
+              - {}
+              destination-port: []
+              destination-port-except: []
+              destination-prefix-list:
+              - {}
+              next-header: []
+              next-header-except: []
+              source-address:
+              - {}
+              source-port: []
+              source-port-except: []
+              source-prefix-list:
+              - {}
+          icmp-code: []
+          icmp-code-except: []
+          icmp-type: []
+          icmp-type-except: []
+          interface:
+          - {}
+          interface-group: []
+          interface-group-except: []
+          interface-set:
+          - {}
+          ip-options: []
+          ip-options-except: []
+          is-fragment: []
+          loss-priority: []
+          loss-priority-except: []
+          packet-length: []
+          packet-length-except: []
+          policy-map: []
+          policy-map-except: []
+          port: []
+          port-except: []
+          precedence: []
+          precedence-except: []
+          prefix-list:
+          - {}
+          protocol: []
+          protocol-except: []
+          rat-type: []
+          rat-type-except: []
+          redirect-reason: []
+          redirect-reason-except: []
+          service-filter-hit: []
+          slice: []
+          slice-except: []
+          source-address:
+          - {}
+          source-class: []
+          source-class-except: []
+          source-port: []
+          source-port-except: []
+          source-prefix-list:
+          - {}
+          tcp-established: []
+          tcp-flags: []
+          tcp-initial: []
+          ttl: []
+          ttl-except: []
+          vxlan:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            flags:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              mask-in-hex: []
+              value: []
+            rsvd1: []
+            rsvd1-except: []
+            rsvd2: []
+            rsvd2-except: []
+            vni: []
+            vni-except: []
+        then:
+          accept: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          clear-policy-map: []
+          count: []
+          decapsulate:
+            gre:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              forwarding-class: []
+              interface-group: []
+              no-decrement-ttl: []
+              routing-instance:
+                routing-instance-name: []
+              sample: []
+            gre-in-udp:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              forwarding-class: []
+              interface-group: []
+              no-decrement-ttl: []
+              routing-instance:
+                routing-instance-name: []
+              sample: []
+            ipip:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              forwarding-class: []
+              interface-group: []
+              no-decrement-ttl: []
+              routing-instance:
+                routing-instance-name: []
+              sample: []
+            l2tp:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              cookie: []
+              forwarding-class: []
+              interface-group: []
+              no-decrement-ttl: []
+              output-interface: []
+              sample: []
+            mpls-in-udp:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              forwarding-class: []
+              interface-group: []
+              no-decrement-ttl: []
+              routing-instance:
+                routing-instance-name: []
+              sample: []
+          discard:
+            accounting: []
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+          dont-fragment: []
+          dscp: []
+          encapsulate:
+            tunnel-end-point: []
+          exclude-accounting: []
+          force-premium: []
+          forwarding-class: []
+          hierarchical-policer: []
+          inband-flow-telemetry-init: []
+          inband-flow-telemetry-terminate: []
+          inline-monitoring-instance: []
+          ipsec-sa: []
+          l2-mirror: []
+          load-balance: []
+          log: []
+          logical-system:
+          - routing-instance:
+              routing-instance-name: []
+              topology: []
+          loss-priority: []
+          next: []
+          next-hop-group: []
+          next-interface:
+            accept: []
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            interface-name: []
+            next: []
+            routing-instance:
+              routing-instance-name: []
+              topology: []
+          next-ip:
+            address: []
+            routing-instance:
+              routing-instance-name: []
+              topology: []
+          packet-capture: []
+          packet-mode: []
+          policer: []
+          policy-map: []
+          port-mirror: []
+          port-mirror-instance: []
+          prefix-action: []
+          redirect: []
+          reject:
+            administratively-prohibited: []
+            bad-host-tos: []
+            bad-network-tos: []
+            fragmentation-needed: []
+            host-prohibited: []
+            host-unknown: []
+            host-unreachable: []
+            network-prohibited: []
+            network-unknown: []
+            network-unreachable: []
+            port-unreachable: []
+            precedence-cutoff: []
+            precedence-violation: []
+            protocol-unreachable: []
+            source-host-isolated: []
+            source-route-failed: []
+            tcp-reset: []
+          routing-instance:
+            routing-instance-name: []
+            topology: []
+          sample: []
+          service-accounting: []
+          service-accounting-deferred: []
+          service-filter-hit: []
+          skip-services: []
+          slice: []
+          syslog: []
+          three-color-policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            single-packet-rate: []
+            single-rate: []
+            two-packet-rate: []
+            two-rate: []
+          topology: []
+          traffic-class-count: []
+          virtual-channel: []
+    flexible-match:
+    - apply-macro:
+      - data:
+        - {}
+    hierarchical-policer:
+    - aggregate:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        if-exceeding:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          bandwidth-limit: []
+          burst-size-limit: []
+        if-exceeding-pps:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          packet-burst: []
+          pps-limit: []
+        then:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          discard: []
+          forwarding-class: []
+          loss-priority: []
+      case_1: []
+      case_2: []
+      premium:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        if-exceeding:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          bandwidth-limit: []
+          burst-size-limit: []
+        if-exceeding-pps:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          packet-burst: []
+          pps-limit: []
+        then:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          discard: []
+    interface-set:
+    - apply-macro:
+      - data:
+        - {}
+      interface-list:
+      - apply-macro:
+        - data:
+          - {}
+    load-balance-group:
+    - apply-macro:
+      - data:
+        - {}
+    policer:
+    - aggregate:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        instantiation: []
+      apply-macro:
+      - data:
+        - {}
+      then:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        discard: []
+        forwarding-class: []
+        loss-priority: []
+        out-of-profile: []
+    three-color-policer:
+    - action:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        loss-priority:
+        - apply-macro:
+          - data:
+            - {}
+          then:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            discard: []
+      apply-macro:
+      - data:
+        - {}
+    tunnel-end-point:
+    - apply-macro:
+      - data:
+        - {}
+  encoding: JSON_IETF
