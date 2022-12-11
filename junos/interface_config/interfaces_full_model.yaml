@@ -1,0 +1,5067 @@
+replaces:
+- path: /configuration/interfaces/interface
+  value:
+  - aggregated-ether-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      autostate-exclude: []
+      bfd-liveness-detection:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        authentication:
+          algorithm: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          key-chain: []
+          loose-check: []
+        detection-time:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          threshold: []
+        holddown-interval: []
+        local-address: []
+        minimum-interval: []
+        minimum-receive-interval: []
+        minimum-transmit-interval: []
+        multiplier:
+        - "3"
+        neighbor: []
+        no-adaptation: []
+        transmit-interval:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          minimum-interval: []
+          threshold: []
+        version:
+        - automatic
+      dlb:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        assigned-flow: []
+        flowlet:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          inactivity-interval:
+          - "256"
+        per-packet: []
+      ethernet-switch-profile:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        mac-learn-enable: []
+        storm-control:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          profile-name: []
+        tag-protocol-id: []
+      fcoe-lag: []
+      flow-control: []
+      lacp:
+        accept-data: []
+        active: []
+        admin-key: []
+        aggregate-wait-time: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        fast-failover: []
+        force-up: []
+        hold-time:
+          up: []
+        link-protection:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          disable: []
+          non-revertive: []
+          revertive: []
+          rtg-config:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            preempt-cutover-timer:
+            - "1"
+        multiplier: []
+        no-peer-loopback-validation: []
+        passive: []
+        periodic: []
+        sync-reset: []
+        system-id: []
+        system-priority: []
+      link-protection:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        backup-state:
+        - accept-data
+        non-revertive: []
+        revertive: []
+        rtg-config:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          preempt-cutover-timer:
+          - "1"
+      link-protection-sub-group:
+      - apply-macro:
+        - data:
+          - {}
+        case_1: []
+        case_2: []
+      link-speed: []
+      load-balance:
+        adaptive:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          pps: []
+          scan-interval: []
+          tolerance: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        local-bias: []
+        no-adaptive: []
+        per-packet: []
+      local-bias:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        disable: []
+      logical-interface-chassis-redundancy: []
+      logical-interface-fpc-redundancy: []
+      loopback: []
+      mc-ae:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        chassis-id: []
+        enhanced-convergence: []
+        events:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          iccp-peer-down:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            force-icl-down: []
+            prefer-status-control-active: []
+        init-delay-time: []
+        mc-ae-id: []
+        mode: []
+        recovery-delay-time: []
+        redundancy-group: []
+        revert-time:
+        - "3"
+        status-control: []
+        switchover-mode: []
+      minimum-bandwidth:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        bw-unit: []
+        bw-value:
+        - "1"
+      minimum-links: []
+      no-fcoe-lag: []
+      no-flow-control: []
+      no-loopback: []
+      no-source-filtering: []
+      pad-to-minimum-frame-size: []
+      rebalance-periodic:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        interval: []
+        start-time: []
+      resilient-hash: []
+      share-standby: []
+      source-address-filter:
+      - {}
+      source-filtering: []
+      targeted-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        logical-interface-chassis-redundancy: []
+        logical-interface-fpc-redundancy: []
+        rebalance-periodic:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          interval: []
+          start-time: []
+        rebalance-subscriber-granularity: []
+        type: []
+    aggregated-inline-services-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      primary-interface: []
+      secondary-interface: []
+    aggregated-sonet-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      link-speed: []
+      minimum-bandwidth: []
+      minimum-links: []
+    anchor-point:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      interface-name: []
+    anchoring-options:
+      apfe-group-set: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      primary-list:
+      - apply-macro:
+        - data:
+          - {}
+      secondary:
+        anchoring-device-name: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+      warm-standby: []
+    apply-macro:
+    - data:
+      - {}
+    atm-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      cell-bundle-size: []
+      cell-bundle-timeout: []
+      ilmi:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+      linear-red-profiles:
+      - {}
+      mpls:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        pop-all-labels:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          required-depth: []
+      no-payload-scrambler: []
+      payload-scrambler: []
+      pic-type: []
+      plp-to-clp: []
+      promiscuous-mode:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        vpi:
+        - {}
+      scheduler-maps:
+      - apply-macro:
+        - data:
+          - {}
+        forwarding-class:
+        - apply-macro:
+          - data:
+            - {}
+          case_2: []
+          transmit-weight:
+            cells: []
+            percent: []
+      use-null-cw: []
+      vpi:
+      - apply-macro:
+        - data:
+          - {}
+        oam-liveness:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          down-count: []
+          up-count: []
+        oam-period:
+          disable: {}
+          oam-period: []
+        shaping:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          cbr:
+            cbr-value: []
+            cdvt: []
+          queue-length: []
+          rtvbr:
+            burst: []
+            cdvt: []
+            peak: []
+            sustained: []
+          vbr:
+            burst: []
+            cdvt: []
+            peak: []
+            sustained: []
+    auto-configure:
+      agent-circuit-identifier:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dynamic-profile: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      line-identity:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dynamic-profile: []
+        includes:
+          accept-no-ids:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          circuit-id: []
+          remote-id: []
+      remove-when-no-subscribers: []
+      stacked-vlan-ranges:
+        access-profile:
+          access-profile-name: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        authentication:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          packet-types:
+          - {}
+          password: []
+          username-include:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            circuit-type: []
+            delimiter: []
+            domain-name: []
+            interface-name: []
+            mac-address: []
+            option-18: []
+            option-37: []
+            option-82:
+              circuit-id: []
+              remote-id: []
+            radius-realm: []
+            user-prefix: []
+            vlan-tags: []
+        dynamic-profile:
+        - accept:
+          - {}
+          access-profile:
+            ap-name: []
+          apply-macro:
+          - data:
+            - {}
+          ranges:
+          - apply-macro:
+            - data:
+              - {}
+        override:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          outer-tag:
+          - apply-macro:
+            - data:
+              - {}
+      vlan-ranges:
+        access-profile:
+          access-profile-name: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        authentication:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          packet-types:
+          - {}
+          password: []
+          username-include:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            circuit-type: []
+            delimiter: []
+            domain-name: []
+            interface-name: []
+            mac-address: []
+            option-18: []
+            option-37: []
+            option-82:
+              circuit-id: []
+              remote-id: []
+            radius-realm: []
+            user-prefix: []
+            vlan-tags: []
+        dynamic-profile:
+        - access-profile:
+            ap-name: []
+          apply-macro:
+          - data:
+            - {}
+          case_1:
+          - {}
+          case_2:
+          - {}
+          ranges:
+          - apply-macro:
+            - data:
+              - {}
+        override:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          tag:
+          - apply-macro:
+            - data:
+              - {}
+    bypass-queueing-chip: []
+    case_1: []
+    case_2: []
+    case_3: []
+    case_4: []
+    cesopsn-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      bit-rate: []
+      excessive-packet-loss-rate:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        sample-period: []
+        threshold: []
+      idle-pattern: []
+      jitter-buffer-auto-adjust: []
+      jitter-buffer-latency: []
+      jitter-buffer-packets: []
+      packetization-latency: []
+      payload-size: []
+    clocking:
+      external: {}
+      internal: []
+    container-options:
+      allow-configuration-override: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      container-list: []
+      container-type:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        aps:
+          advertise-interval: []
+          annex-b: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          authentication-key:
+            auth_key: []
+          break-before-make: []
+          fast-aps-switch: []
+          force: []
+          hold-time: []
+          lockout: []
+          neighbor: []
+          no-break-before-make: []
+          paired-group: []
+          preserve-interface: []
+          protect-circuit: []
+          request: []
+          revert-time: []
+          switching-mode: []
+          wait-to-restore-time: []
+          working-circuit: []
+      fast-aps: []
+      member-interface-type:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        atm:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          member-interface-speed: []
+        channelized-sdh:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          member-interface-speed: []
+        channelized-sonet:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          member-interface-speed: []
+        sonet:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          member-interface-speed: []
+      primary: []
+      redundancy:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        hold-time:
+          down: []
+          up: []
+      standby: []
+    damping:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      enable: []
+      half-life:
+      - "5"
+      max-suppress:
+      - "20"
+      reuse:
+      - "1000"
+      suppress:
+      - "2000"
+    data-input:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      interface: []
+      system: []
+    ds0-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      bert-algorithm: []
+      bert-error-rate: []
+      bert-period: []
+      byte-encoding: []
+      fcs: []
+      idle-cycle-flag: []
+      invert-data: []
+      loopback: []
+      start-end-flag: []
+    dsl-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      operating-mode: []
+    dsl-sfp-options:
+      adsl-options:
+        annex: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        encap: []
+        vci: []
+        vpi: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      gfast-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        carrier: []
+      vdsl-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        carrier: []
+        profile: []
+    e1-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      bert-algorithm: []
+      bert-error-rate: []
+      bert-period: []
+      fcs: []
+      framing: []
+      idle-cycle-flag: []
+      invert-data: []
+      loopback: []
+      start-end-flag: []
+      timeslots: []
+    e3-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      atm-encapsulation: []
+      bert-algorithm: []
+      bert-error-rate: []
+      bert-period: []
+      buildout: []
+      compatibility-mode:
+        digital-link:
+          subrate: []
+        kentrox:
+          subrate: []
+        larscom: []
+      fcs: []
+      framing: []
+      idle-cycle-flag: []
+      invert-data: []
+      loopback: []
+      no-payload-scrambler: []
+      no-unframed: []
+      payload-scrambler: []
+      start-end-flag: []
+      unframed: []
+    es-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      backup-interface: []
+    esi:
+      all-active: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      auto-derive:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        lacp-pe-system-id-and-admin-key: []
+        type-1-lacp: []
+        type-3-system-mac:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          local-discriminator: []
+          mac: []
+      df-election-granularity:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        per-esi:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          lacp-oos-on-ndf: []
+        per-esi-vlan: []
+      df-election-type:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        mod: {}
+        preference:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          value:
+          - "32767"
+      identifier: []
+      single-active: []
+      source-bmac: []
+    ether-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      asynchronous-notification: []
+      auto-negotiation: []
+      autostate-exclude: []
+      configured-flow-control:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        rx-buffers: []
+        tx-buffers: []
+      ethernet-switch-profile:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        ethernet-policer-profile:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          input-priority-map:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            ieee-802.1p:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              premium: []
+          output-priority-map:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            classifier:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              premium:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                forwarding-class:
+                - apply-macro:
+                  - data:
+                    - {}
+                  loss-priority:
+                  - {}
+          policer:
+          - aggregate:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              bandwidth-limit: []
+              burst-size-limit: []
+            apply-macro:
+            - data:
+              - {}
+            premium:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              bandwidth-limit: []
+              burst-size-limit: []
+        mac-learn-enable: []
+        no-mac-learn-enable: []
+        recovery-timeout:
+          time-in-seconds: []
+        storm-control:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          profile-name: []
+        tag-protocol-id: []
+      fec: []
+      flow-control: []
+      ieee-802-3az-eee: []
+      ieee-802.3ad:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        backup: []
+        bundle: []
+        lacp:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          force-up: []
+          port-priority: []
+        link-protection-sub-group:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          subgroup-name: []
+        port-priority: []
+        primary: []
+      ignore-l3-incompletes: []
+      link-mode: []
+      loopback: []
+      loopback-remote: []
+      mpls:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        pop-all-labels:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          required-depth: []
+      no-auto-mdix: []
+      no-auto-negotiation: []
+      no-flow-control: []
+      no-loopback: []
+      no-source-filtering: []
+      redundant-parent:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        parent: []
+      source-address-filter:
+      - {}
+      source-filtering: []
+      speed:
+        auto-negotiation:
+          auto-negotiate-10-100: []
+        ethernet-100m: []
+        ethernet-10g: []
+        ethernet-10m: []
+        ethernet-1g: []
+    ett-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      rate: []
+    fabric-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      member-interfaces:
+      - apply-macro:
+        - data:
+          - {}
+      remote-chassis:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        destination: []
+    fastether-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      flow-control: []
+      ieee-802.3ad:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        backup: []
+        bundle: []
+        lacp:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          port-priority: []
+        primary: []
+      ignore-l3-incompletes: []
+      ingress-rate-limit: []
+      loopback: []
+      mpls:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        pop-all-labels:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          required-depth: []
+      no-flow-control: []
+      no-loopback: []
+      no-source-filtering: []
+      redundant-parent:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        parent: []
+      source-address-filter:
+      - {}
+      source-filtering: []
+    fibrechannel-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      bb-sc-n: []
+      loopback: []
+      no-loopback: []
+      speed: []
+    forwarding-class-accounting:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      direction: []
+      enhanced:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        direction: []
+        family: []
+        overhead-bytes:
+        - "0"
+        traffic-type: []
+    framing:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      lan-phy: []
+      precise-bandwidth: []
+      sdh: []
+      sonet: []
+      wan-phy: []
+    ggsn-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      core-dump: []
+      no-core-dump: []
+      no-syslog: []
+      syslog: []
+    gigether-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      asynchronous-notification: []
+      auto-negotiation:
+        remote-fault: []
+      ethernet-switch-profile:
+        accept-from:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          mac-address:
+          - apply-macro:
+            - data:
+              - {}
+            policer:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              input: []
+              output: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        ethernet-policer-profile:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          ieee802.1-priority-map:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            premium: []
+          input-priority-map:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            ieee-802.1p:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              premium: []
+          output-priority-map:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            classifier:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              premium:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                forwarding-class:
+                - apply-macro:
+                  - data:
+                    - {}
+                  loss-priority:
+                  - {}
+          policer:
+          - aggregate:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              bandwidth-limit: []
+              burst-size-limit: []
+            apply-macro:
+            - data:
+              - {}
+            premium:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              bandwidth-limit: []
+              burst-size-limit: []
+        mac-learn-enable: []
+        no-reject-the-rest: []
+        reject-the-rest: []
+        tag-protocol-id: []
+      fec: []
+      flow-control: []
+      ieee-802-3az-eee: []
+      ieee-802.3ad:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        backup: []
+        bundle: []
+        distribution-list: []
+        lacp:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          port-priority: []
+        link-index: []
+        primary: []
+      ignore-l3-incompletes: []
+      loopback: []
+      loopback-remote: []
+      mpls:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        pop-all-labels:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          required-depth: []
+      mru: []
+      no-auto-mdix: []
+      no-auto-negotiation: []
+      no-flow-control: []
+      no-loopback: []
+      no-source-filtering: []
+      pad-to-minimum-frame-size: []
+      redundant-parent:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        parent: []
+      source-address-filter:
+      - {}
+      source-filtering: []
+      speed: []
+    gratuitous-arp-reply: []
+    hold-time:
+      down: []
+      up: []
+    ima-group-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      differential-delay: []
+      frame-length: []
+      frame-synchronization:
+        alpha: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        beta: []
+        gamma: []
+      minimum-links:
+        symmetrical: []
+      symmetry:
+      - symmetrical-config-and-operation
+      test-procedure:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        interface: []
+        pattern: []
+        period: []
+      transmit-clock: []
+      version: []
+    ima-link-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      group-id: []
+    interface-mib: []
+    layer2-policer:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      input-hierarchical-policer: []
+      input-policer: []
+    link-degrade-monitor:
+      actions:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        media-based: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      link-degrade-monitor-enable: []
+      no-link-degrade-monitor-enable: []
+      recovery:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        auto: []
+        manual: []
+        timer:
+        - "1800"
+      thresholds:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        clear:
+        - "1e-12"
+        interval:
+        - "10"
+        set:
+        - "1e-7"
+        warning-clear:
+        - "1e-11"
+        warning-set:
+        - "1e-9"
+    lmi:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      lmi-type: []
+      n391dte: []
+      n392dce: []
+      n392dte: []
+      n393dce: []
+      n393dte: []
+      t391dte: []
+      t392dce: []
+    load-balancing-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      high-availability-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        many-to-one:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          preferred-backup: []
+        one-to-one:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          preferred-backup: []
+          redundancy-group:
+          - {}
+      member-failure-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        drop-member-traffic:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-rejoin: []
+          rejoin-timeout:
+          - "120"
+        redistribute-all-traffic:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-rejoin: []
+      member-interface:
+      - apply-macro:
+        - data:
+          - {}
+        redundancy-group:
+          description: []
+          group-id: []
+      no-bundle-flap: []
+    logical-tunnel-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      link-protection:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        non-revertive: []
+        revertive: []
+      load-balance:
+        adaptive:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          pps: []
+          scan-interval: []
+          tolerance: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        local-bias: []
+        no-adaptive: []
+        per-packet: []
+      per-unit-mac-disable: []
+    lsq-failure-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      no-no-termination-request: []
+      no-termination-request: []
+      trigger-link-failure:
+      - apply-macro:
+        - data:
+          - {}
+    mlfr-uni-nni-bundle-options:
+      acknowledge-retries: []
+      acknowledge-timer: []
+      action-red-differential-delay: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      cisco-interoperability:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        send-lip-remove-link-for-link-reject: []
+      drop-timeout: []
+      fragment-threshold: []
+      hello-timer: []
+      link-layer-overhead: []
+      lmi-type: []
+      minimum-links: []
+      mrru: []
+      n391: []
+      n392: []
+      n393: []
+      red-differential-delay: []
+      t391: []
+      t392: []
+      yellow-differential-delay: []
+    multi-chassis-protection:
+    - apply-macro:
+      - data:
+        - {}
+    multiservice-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      core-dump: []
+      dump-on-flow-control: []
+      flow-control-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        down-on-flow-control: []
+        dump-on-flow-control: []
+        reset-on-flow-control: []
+        up-on-flow-control: []
+      no-core-dump: []
+      no-dump-on-flow-control: []
+      no-reset-on-flow-control: []
+      no-syslog: []
+      reset-on-flow-control: []
+      syslog: []
+    no-bypass-queueing-chip: []
+    no-gratuitous-arp-reply: []
+    no-gratuitous-arp-request: []
+    no-interface-mib: []
+    no-no-gratuitous-arp-request: []
+    no-partition:
+      interface-type: []
+    no-traps: []
+    och-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      encoding: []
+      frequency: []
+      laser-enable: []
+      modulation: []
+      no-laser-enable: []
+      rate: []
+      tx-power: []
+      wavelength: []
+    odu-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      degrade:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        degm: []
+        degthr: []
+      exp-payload-type: []
+      is-ma: []
+      no-is-ma: []
+      prbs:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        direction:
+        - line
+        enable-prbs: []
+        invert: []
+        no-enable-prbs: []
+        no-invert: []
+        pattern:
+        - prbs-31
+      rate: []
+      tti:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dapi: []
+        exp-dapi: []
+        exp-sapi: []
+        no-tim-act-enable: []
+        operator: []
+        sapi: []
+        tim-act-enable: []
+        tim-detect-mode: []
+    optics-options:
+      alarm:
+      - apply-macro:
+        - data:
+          - {}
+        case_1: []
+        case_2: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      encoding: []
+      fec: []
+      high-polarization: []
+      host-side-fec: []
+      is-ma: []
+      lane:
+      - apply-macro:
+        - data:
+          - {}
+      lane-all:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        rx-cdr: []
+        rx-output: []
+        rx-output-amplitude: []
+        rx-output-emphasis: []
+        rx-rate-select: []
+        rx-squelch: []
+        tx-cdr: []
+        tx-input-equalization-adaptive: []
+        tx-input-equalization-manual: []
+        tx-laser: []
+        tx-rate-select: []
+        tx-squelch: []
+      laser-enable: []
+      loopback: []
+      los-alarm-threshold: []
+      los-warning-threshold: []
+      low-power-mode: []
+      media-side-fec: []
+      modulation-format: []
+      no-is-ma: []
+      no-laser-enable: []
+      signal-degrade:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        ber-threshold-clear: []
+        ber-threshold-signal-degrade: []
+        interval:
+        - "10"
+        q-threshold-signal-degrade: []
+        q-threshold-signal-degrade-clear: []
+      tca:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        carrier-frequency-offset-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        carrier-frequency-offset-low-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        fec-ber:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "10e-3"
+          threshold-24hrs:
+          - "10e-3"
+        fec-corrected-errors-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "10e-3"
+          threshold-24hrs:
+          - "10e-3"
+        fec-ucorrected-words-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "10e-3"
+          threshold-24hrs:
+          - "10e-3"
+        laser-frequency-error-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        laser-frequency-error-low-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        pam-histogram-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        residual-isi-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        residual-isi-low-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        rx-power-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        rx-power-low-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        snr-low-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        tec-current-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        tec-current-low-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        temperature-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        temperature-low-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        tx-power-high-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+        tx-power-low-tca:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          enable-tca: []
+          no-enable-tca: []
+          threshold: []
+          threshold-24hrs: []
+      tx-power: []
+      warning:
+      - apply-macro:
+        - data:
+          - {}
+        case_1: []
+        case_2: []
+      wavelength: []
+    otn-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      bytes:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        transmit-payload-type: []
+      fec: []
+      insert-odu-lck: []
+      insert-odu-oci: []
+      is-ma: []
+      laser-enable: []
+      line-loopback: []
+      local-loopback: []
+      no-insert-odu-lck: []
+      no-insert-odu-oci: []
+      no-is-ma: []
+      no-laser-enable: []
+      no-line-loopback: []
+      no-local-loopback: []
+      no-odu-ttim-action-enable: []
+      no-otu-ttim-action-enable: []
+      no-prbs: []
+      no-transport-monitoring: []
+      odu-delay-management:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        bypass: []
+        monitor-end-point: []
+        no-bypass: []
+        no-monitor-end-point: []
+        no-remote-loop-enable: []
+        no-start-measurement: []
+        number-of-frames: []
+        remote-loop-enable: []
+        start-measurement: []
+      odu-signal-degrade:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        ber-threshold-clear:
+        - "1.0e-9"
+        ber-threshold-signal-degrade:
+        - "1.0e-6"
+        interval:
+        - "10"
+      odu-ttim-action-enable: []
+      otu-ttim-action-enable: []
+      prbs: []
+      preemptive-fast-reroute:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        backward-frr-enable: []
+        no-backward-frr-enable: []
+        no-odu-backward-frr-enable: []
+        no-odu-signal-degrade-monitor-enable: []
+        no-signal-degrade-monitor-enable: []
+        odu-backward-frr-enable: []
+        odu-signal-degrade-monitor-enable: []
+        signal-degrade-monitor-enable: []
+      rate: []
+      signal-degrade:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        ber-threshold-clear: []
+        ber-threshold-signal-degrade: []
+        interval:
+        - "10"
+        q-threshold-signal-degrade: []
+        q-threshold-signal-degrade-clear: []
+      tca:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        odu-tca-bbe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "800"
+          threshold-24hrs:
+          - "960"
+        odu-tca-bbe-fe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "800"
+          threshold-24hrs:
+          - "960"
+        odu-tca-es:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "135"
+          threshold-24hrs:
+          - "162"
+        odu-tca-es-fe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "135"
+          threshold-24hrs:
+          - "162"
+        odu-tca-ses:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "90"
+          threshold-24hrs:
+          - "108"
+        odu-tca-ses-fe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "90"
+          threshold-24hrs:
+          - "108"
+        odu-tca-uas:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "90"
+          threshold-24hrs:
+          - "108"
+        odu-tca-uas-fe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "90"
+          threshold-24hrs:
+          - "108"
+        otu-tca-bbe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "800"
+          threshold-24hrs:
+          - "960"
+        otu-tca-bbe-fe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "800"
+          threshold-24hrs:
+          - "960"
+        otu-tca-es:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "135"
+          threshold-24hrs:
+          - "162"
+        otu-tca-es-fe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "135"
+          threshold-24hrs:
+          - "162"
+        otu-tca-fec-ber:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "10e-3"
+          threshold-24hrs:
+          - "10e-3"
+        otu-tca-ses:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "90"
+          threshold-24hrs:
+          - "108"
+        otu-tca-ses-fe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "90"
+          threshold-24hrs:
+          - "108"
+        otu-tca-uas:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "90"
+          threshold-24hrs:
+          - "108"
+        otu-tca-uas-fe:
+          enable-tca: []
+          no-enable-tca: []
+          threshold:
+          - "90"
+          threshold-24hrs:
+          - "108"
+      transport-monitoring: []
+      trigger:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        oc-lof:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        oc-lom:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        oc-los:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        oc-tsf:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        oc-wavelength-lock:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        odu-ais:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        odu-bdi:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        odu-bei:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        odu-iae:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        odu-lck:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        odu-oci:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        odu-sd:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        odu-ttim:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        opu-ptim:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        otu-ais:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        otu-bdi:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        otu-fec-deg:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        otu-fec-exe:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        otu-iae:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        otu-sd:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        otu-ttim:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+      tti:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        no-odu-dapi-first-byte-nul: []
+        no-odu-expected-receive-dapi-first-byte-nul: []
+        no-odu-expected-receive-sapi-first-byte-nul: []
+        no-odu-sapi-first-byte-nul: []
+        no-otu-dapi-first-byte-nul: []
+        no-otu-expected-receive-dapi-first-byte-nul: []
+        no-otu-expected-receive-sapi-first-byte-nul: []
+        no-otu-sapi-first-byte-nul: []
+        odu-dapi: []
+        odu-dapi-first-byte-nul: []
+        odu-expected-receive-dapi: []
+        odu-expected-receive-dapi-first-byte-nul: []
+        odu-expected-receive-sapi: []
+        odu-expected-receive-sapi-first-byte-nul: []
+        odu-sapi: []
+        odu-sapi-first-byte-nul: []
+        otu-dapi: []
+        otu-dapi-first-byte-nul: []
+        otu-expected-receive-dapi: []
+        otu-expected-receive-dapi-first-byte-nul: []
+        otu-expected-receive-sapi: []
+        otu-expected-receive-sapi-first-byte-nul: []
+        otu-sapi: []
+        otu-sapi-first-byte-nul: []
+    otu-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      degrade:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        degm: []
+        degthr: []
+      fec: []
+      is-ma: []
+      loopback: []
+      no-is-ma: []
+      rate: []
+      tti:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dapi: []
+        exp-dapi: []
+        exp-sapi: []
+        no-tim-act-enable: []
+        operator: []
+        sapi: []
+        tim-act-enable: []
+        tim-detect-mode: []
+    p4rt:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      id: []
+      node-id: []
+    partition:
+    - {}
+    ppp-options:
+      aaa-options: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      authentication: []
+      chap:
+        access-profile: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        challenge-length:
+          maximum:
+          - "32"
+          minimum:
+          - "16"
+        default-chap-secret: []
+        local-name: []
+        no-rfc2486: []
+        passive: []
+      compression:
+        acfc: []
+        pfc: []
+      dynamic-profile: []
+      ignore-magic-number-mismatch: []
+      initiate-ncp:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dual-stack-passive: []
+        ip: []
+        ipv6: []
+      ipcp-suggest-dns-option: []
+      lcp-connection-update: []
+      lcp-max-conf-req: []
+      lcp-restart-timer: []
+      local-authentication:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        password: []
+        username-include:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          circuit-id: []
+          delimiter: []
+          domain-name: []
+          mac-address: []
+          remote-id: []
+      loopback-clear-timer: []
+      mru: []
+      mtu: []
+      ncp-max-conf-req: []
+      ncp-restart-timer: []
+      no-termination-request: []
+      on-demand-ip-address: []
+      pap:
+        access-profile: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        default-password: []
+        local-name: []
+        local-password: []
+        no-rfc2486: []
+        passive: []
+      peer-ip-address-optional: []
+    radius-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      nas-port-options:
+      - apply-macro:
+        - data:
+          - {}
+        nas-port-extended-format:
+          adapter: []
+          adapter-width: []
+          ae-width: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          port: []
+          port-width: []
+          pw-width: []
+          slot: []
+          slot-width: []
+          stacked: []
+          stacked-vlan-width: []
+          vci-width: []
+          vlan-width: []
+          vpi-width: []
+        stacked-vlan-ranges:
+        - apply-macro:
+          - data:
+            - {}
+        vlan-ranges:
+        - apply-macro:
+          - data:
+            - {}
+    receive-bucket:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      overflow: []
+      rate: []
+      threshold: []
+    redundancy-group:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      maximum-links: []
+      member-interface:
+      - apply-macro:
+        - data:
+          - {}
+        case_1: []
+        case_2: []
+    redundancy-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      primary: []
+      redundancy-local:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        data-address: []
+      redundancy-peer:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        ipaddress: []
+      replicate-services:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        pgcp: []
+      replication-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        mtu:
+        - "1500"
+      replication-threshold:
+      - "180"
+      routing-instance: []
+      secondary: []
+    redundant-ether-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      flow-control: []
+      lacp:
+        active: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        passive: []
+        periodic: []
+      link-speed: []
+      loopback: []
+      minimum-links:
+      - "1"
+      no-flow-control: []
+      no-loopback: []
+      no-source-filtering: []
+      redundancy-group: []
+      source-address-filter:
+      - {}
+      source-filtering: []
+    satop-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      bit-rate: []
+      excessive-packet-loss-rate:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        sample-period: []
+        threshold: []
+      idle-pattern: []
+      jitter-buffer-auto-adjust: []
+      jitter-buffer-latency: []
+      jitter-buffer-packets: []
+      payload-size: []
+    serial-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      clock-rate: []
+      clocking-mode: []
+      control-polarity: []
+      cts-polarity: []
+      dcd-polarity: []
+      dce-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        cts: []
+        dcd: []
+        dce-loopback-override: []
+        dsr: []
+        dtr: []
+        ignore-all: []
+        rts: []
+        tm: []
+      dsr-polarity: []
+      dte-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        control-signal: []
+        cts: []
+        dcd: []
+        dsr: []
+        dtr:
+          assert: []
+          auto-synchronize:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            duration: []
+            interval: []
+          de-assert: []
+          normal: []
+        ignore-all: []
+        indication: []
+        rts: []
+        tm: []
+      dtr-circuit: []
+      dtr-polarity: []
+      encoding: []
+      idle-cycle-flag: []
+      indication-polarity: []
+      line-protocol:
+      - eia530
+      loopback: []
+      rts-polarity: []
+      tm-polarity: []
+      transmit-clock: []
+    services-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      capture:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        capture-size: []
+        filter:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          dest-ip:
+            ip: []
+            wildcard: []
+          dport-range:
+            high: []
+            low: []
+          proto: []
+          source-ip:
+            ip: []
+            wildcard: []
+          sport-range:
+            high: []
+            low: []
+          sw-dip:
+            ip: []
+            wildcard: []
+          sw-sip:
+            ip: []
+            wildcard: []
+        logs-per-packet: []
+        max-log-line-size: []
+        pkt-size: []
+      cgn-pic: []
+      close-timeout: []
+      deterministic-nat-configuration-log-interval:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        interval: []
+      disable-drop-flows: []
+      disable-global-timeout-override: []
+      disable-subscriber-analysis: []
+      disable-usp-tracing: []
+      enable-subscriber-analysis: []
+      flow:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        traceoptions: {}
+      fpc-pic-information: []
+      fragment-limit:
+      - "250"
+      ignore-errors:
+        alg: []
+        tcp: []
+      inactivity-asymm-tcp-timeout: []
+      inactivity-non-tcp-timeout: []
+      inactivity-tcp-timeout: []
+      inactivity-timeout: []
+      jflow-log:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        message-rate-limit: []
+      open-timeout: []
+      pba-interim-logging-interval:
+      - "0"
+      reassembly-timeout:
+      - "4"
+      session-limit:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        cpu-load-threshold: []
+        maximum: []
+        rate: []
+      session-timeout: []
+      syslog:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        cache:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          exclude:
+          - apply-macro:
+            - data:
+              - {}
+          limit:
+          - "10000"
+        exclude:
+        - apply-macro:
+          - data:
+            - {}
+        host:
+        - apply-macro:
+          - data:
+            - {}
+          class:
+            alg-logs: {}
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            ha-logs:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              close-synchronized: {}
+              open-synchronized: {}
+            ids-logs: {}
+            nat-logs:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              deterministic-nat-configuration-log: {}
+            packet-logs: {}
+            pcp-logs:
+              debug: {}
+              map: {}
+            session-logs:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              close: {}
+              open: {}
+            stateful-firewall-logs: {}
+            urlf-logs: {}
+          contents:
+          - case_1: []
+            case_2: []
+            case_3: []
+            case_4: []
+            case_5: []
+            case_6: []
+            case_7: []
+            case_8: []
+            case_9: []
+          tcp-log:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            source-address: []
+            ssl-profile: []
+            vrf-name: []
+        limit:
+        - "10000"
+        message-rate-limit: []
+      syslog-local-system-timestamp: []
+      tcp-tickles:
+      - "4"
+      trio-flow-offload:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        minimum-bytes: []
+      utc-timestamp: []
+    shdsl-options:
+      annex:
+      - annex-b
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      line-rate: []
+      loopback: []
+      snr-margin:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        current: []
+        snext: []
+    sonet-options:
+      aggregate: []
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      aps:
+        advertise-interval: []
+        annex-b: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        authentication-key:
+          auth_key: []
+        break-before-make: []
+        fast-aps-switch: []
+        force: []
+        hold-time: []
+        lockout: []
+        neighbor: []
+        no-break-before-make: []
+        paired-group: []
+        preserve-interface: []
+        protect-circuit: []
+        request: []
+        revert-time: []
+        switching-mode: []
+        wait-to-restore-time: []
+        working-circuit: []
+      bytes:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        c2: []
+        e1-quiet: []
+        f1: []
+        f2: []
+        s1: []
+        z3: []
+        z4: []
+      fcs: []
+      loop-timing: []
+      loopback: []
+      mpls:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        pop-all-labels:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          required-depth: []
+      no-loop-timing: []
+      no-payload-scrambler: []
+      no-z0-increment: []
+      path-trace: []
+      payload-scrambler: {}
+      rfc-2615: []
+      trigger:
+        ais-l:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        ais-p:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        ber-sd:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        ber-sf:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        lcdp:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        locd:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        lof:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        lol:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        lop-p:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        los:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        pll:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        plm-p:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        rfi-l:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        rfi-p:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+        uneq-p:
+          hold-time:
+            down: []
+            up: []
+          ignore: []
+      vtmapping: []
+      z0-increment: []
+    switch-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      switch-port:
+      - apply-macro:
+        - data:
+          - {}
+        auto-negotiation: []
+        no-auto-negotiation: []
+    t1-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      bert-algorithm: []
+      bert-error-rate: []
+      bert-period: []
+      buildout: []
+      byte-encoding: []
+      crc-major-alarm-threshold:
+      - "5e-5"
+      crc-minor-alarm-threshold:
+      - "5e-6"
+      disable-remote-alarm-detection: []
+      fcs: []
+      framing: []
+      idle-cycle-flag: []
+      invert-data: []
+      line-encoding: []
+      loopback: []
+      remote-loopback-respond: []
+      start-end-flag: []
+      timeslots: []
+    t3-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      atm-encapsulation: []
+      bert-algorithm: []
+      bert-error-rate: []
+      bert-period: []
+      buildout: []
+      cbit-parity: []
+      compatibility-mode:
+        adtran:
+          subrate: []
+        digital-link:
+          subrate: []
+        kentrox:
+          subrate: []
+        larscom:
+          subrate: []
+        verilink:
+          subrate: []
+      fcs: []
+      feac-loop-respond: []
+      idle-cycle-flag: []
+      long-buildout: []
+      loop-timing: []
+      loopback: []
+      no-cbit-parity: []
+      no-feac-loop-respond: []
+      no-long-buildout: []
+      no-loop-timing: []
+      no-payload-scrambler: []
+      payload-scrambler: []
+      start-end-flag: []
+    targeted-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      logical-interface-chassis-redundancy: []
+      logical-interface-fpc-redundancy: []
+      rebalance-periodic:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        interval: []
+        start-time: []
+      rebalance-subscriber-granularity: []
+    tdm-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      ces-psn-channel:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dmac-address: []
+        mode: []
+        vlan-id-1: []
+        vlan-id-2: []
+      ces-psn-port-dmac-check-enable: []
+      iwf-params:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        decap-ecid: []
+        encap-ecid: []
+      sfp-type: []
+      tdm-in-loop: []
+      tdm-out-loop: []
+    traceoptions:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      flag:
+      - {}
+    transmit-bucket:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      overflow: []
+      rate: []
+      threshold: []
+    traps: []
+    unit:
+    - accept-source-mac:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        mac-address:
+        - apply-macro:
+          - data:
+            - {}
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+      account-layer2-overhead:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        egress: []
+        ingress: []
+        overhead-value: []
+      actual-transit-statistics: {}
+      advisory-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        downstream-rate: []
+        upstream-rate: []
+      apply-macro:
+      - data:
+        - {}
+      arp-resp:
+        restricted: []
+        unrestricted: []
+      atm-l2circuit-mode:
+        aal5: []
+        cell: []
+      atm-policer:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        input-atm-policer: []
+      auto-configure:
+        agent-circuit-identifier:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          dynamic-profile: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        line-identity:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          dynamic-profile: []
+          includes:
+            accept-no-ids:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            circuit-id: []
+            remote-id: []
+        remove-when-no-subscribers: []
+        stacked-vlan-ranges:
+          access-profile:
+            access-profile-name: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          authentication:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            packet-types:
+            - {}
+            password: []
+            username-include:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              circuit-type: []
+              delimiter: []
+              domain-name: []
+              interface-name: []
+              mac-address: []
+              option-18: []
+              option-37: []
+              option-82:
+                circuit-id: []
+                remote-id: []
+              radius-realm: []
+              user-prefix: []
+              vlan-tags: []
+          dynamic-profile:
+          - accept:
+            - {}
+            access-profile:
+              ap-name: []
+            apply-macro:
+            - data:
+              - {}
+            ranges:
+            - apply-macro:
+              - data:
+                - {}
+          override:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            outer-tag:
+            - apply-macro:
+              - data:
+                - {}
+        vlan-ranges:
+          access-profile:
+            access-profile-name: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          authentication:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            packet-types:
+            - {}
+            password: []
+            username-include:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              circuit-type: []
+              delimiter: []
+              domain-name: []
+              interface-name: []
+              mac-address: []
+              option-18: []
+              option-37: []
+              option-82:
+                circuit-id: []
+                remote-id: []
+              radius-realm: []
+              user-prefix: []
+              vlan-tags: []
+          dynamic-profile:
+          - access-profile:
+              ap-name: []
+            apply-macro:
+            - data:
+              - {}
+            case_1:
+            - {}
+            case_2:
+            - {}
+            ranges:
+            - apply-macro:
+              - data:
+                - {}
+          override:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            tag:
+            - apply-macro:
+              - data:
+                - {}
+      case_1: []
+      case_2: []
+      case_3: []
+      case_4: []
+      case_5: []
+      compression:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        rtp:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          f-max-period: []
+          maximum-contexts:
+            number: []
+          port:
+            maximum: []
+            minimum: []
+          queues: []
+      demux:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        inet:
+          address: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          auto-configure:
+            address-ranges:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              authentication:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                password: []
+                username-include:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  auth-server-realm: []
+                  delimiter: []
+                  domain-name: []
+                  interface-name: []
+                  source-address: []
+                  user-prefix: []
+              dynamic-profile:
+              - apply-macro:
+                - data:
+                  - {}
+                network:
+                - apply-macro:
+                  - data:
+                    - {}
+                  range:
+                  - apply-macro:
+                    - data:
+                      - {}
+              session-timeout: []
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+        inet6:
+          address: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          auto-configure:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            prefix-ranges:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              authentication:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                password: []
+                username-include:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  auth-server-realm: []
+                  delimiter: []
+                  domain-name: []
+                  interface-name: []
+                  source-address: []
+                  user-prefix: []
+              dynamic-profile:
+              - apply-macro:
+                - data:
+                  - {}
+                prefix:
+                - apply-macro:
+                  - data:
+                    - {}
+                  range:
+                  - apply-macro:
+                    - data:
+                      - {}
+              session-timeout: []
+      demux-destination:
+      - {}
+      demux-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        underlying-interface: []
+      demux-source:
+      - {}
+      dial-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        dedicated: []
+        ipsec-interface-id: []
+        l2tp-interface-id: []
+        shared: []
+      epd-threshold:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        epd-threshold-plp0: []
+        plp1: []
+      esi:
+        all-active: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        auto-derive:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          lacp-pe-system-id-and-admin-key: []
+        df-election-granularity:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          per-esi:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            lacp-oos-on-ndf: []
+          per-esi-vlan: []
+        df-election-type:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          mod: {}
+          preference:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            value:
+            - "32767"
+        identifier: []
+        single-active: []
+        source-bmac: []
+      family:
+        any:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          filter:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            group: []
+            input: []
+        bridge:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          bridge-domain-type: []
+          core-facing: []
+          filter:
+            adf:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              counter: []
+              input-precedence: []
+              not-mandatory: []
+              output-precedence: []
+              rule:
+              - apply-macro:
+                - data:
+                  - {}
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            group: []
+            input:
+              filter-name: []
+              precedence: []
+              shared-name: []
+            input-chain: []
+            input-list: []
+            output:
+              filter-name: []
+              precedence: []
+              shared-name: []
+            output-chain: []
+            output-list: []
+          ingress-queuing-filter:
+            filter-name: []
+          inner-vlan-id-list: []
+          inter-switch-link: []
+          interface-mode: []
+          iq-policing-filter:
+            filter-name: []
+          isid-list: []
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          recovery-timeout:
+            time-in-seconds: []
+          sampling:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          storm-control:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            profile-name: []
+          vlan-auto-sense: []
+          vlan-id: []
+          vlan-id-list: []
+          vlan-rewrite:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            translate:
+            - {}
+        ccc:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          filter:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            group: []
+            input: []
+            input-chain: []
+            input-list: []
+            output: []
+            output-chain: []
+            output-list: []
+          ingress-queuing-filter:
+            filter-name: []
+          keep-address-and-control: []
+          mtu: []
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          translate-discard-eligible: []
+          translate-fecn-and-becn: []
+          translate-plp-control-word-de: []
+        ethernet-switching:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          bridge-domain-type: []
+          core-facing: []
+          filter:
+            adf:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              counter: []
+              input-precedence: []
+              not-mandatory: []
+              output-precedence: []
+              rule:
+              - apply-macro:
+                - data:
+                  - {}
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            group: []
+            input: []
+            input-chain: []
+            input-list: []
+            input-precedence: []
+            output: []
+            output-chain: []
+            output-list: []
+            output-precedence: []
+          inner-vlan:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            members: []
+          inner-vlan-id-list: []
+          inter-switch-link: []
+          interface-mode:
+          - access
+          isid-list: []
+          native-vlan-id: []
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          port-mode: []
+          recovery-timeout:
+            time-in-seconds: []
+          reflective-relay: []
+          storm-control:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            profile-name: []
+          vlan:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            members: []
+          vlan-auto-sense: []
+          vlan-rewrite:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            translate:
+            - {}
+        fibre-channel:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          fc-fabric:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            members: []
+          native-fabric: []
+          no-npiv: []
+          port-mode: []
+        inet:
+          accounting:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            destination-class-usage: []
+            source-class-usage:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              input: []
+              output: []
+          address:
+          - apply-macro:
+            - data:
+              - {}
+            arp:
+            - case_1: []
+              case_2: []
+            multipoint-destination:
+            - apply-macro:
+              - data:
+                - {}
+              case_1: []
+              case_2: []
+              epd-threshold:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                epd-threshold-plp0: []
+                plp1: []
+              oam-liveness:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                down-count: []
+                up-count: []
+              oam-period:
+                disable: {}
+                oam_period: []
+              shaping:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                cbr:
+                  cbr-value: []
+                  cdvt: []
+                queue-length: []
+                rtvbr:
+                  burst: []
+                  cdvt: []
+                  peak: []
+                  sustained: []
+                vbr:
+                  burst: []
+                  cdvt: []
+                  peak: []
+                  sustained: []
+            vrrp-group:
+            - apply-macro:
+              - data:
+                - {}
+              case_1: []
+              case_2: []
+              case_3: []
+              track:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                interface:
+                - apply-macro:
+                  - data:
+                    - {}
+                  bandwidth-threshold:
+                  - {}
+                priority-hold-time: []
+                route:
+                - {}
+              vrrp-inherit-from:
+                active-group: []
+                active-interface: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+            web-authentication:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              http: []
+              https: []
+              redirect-to-https: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          arp-max-cache: []
+          arp-new-hold-limit: []
+          auto-configure:
+            address-ranges:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              authentication:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                password: []
+                username-include:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  auth-server-realm: []
+                  delimiter: []
+                  domain-name: []
+                  interface-name: []
+                  source-address: []
+                  user-prefix: []
+              dynamic-profile:
+              - apply-macro:
+                - data:
+                  - {}
+                network:
+                - apply-macro:
+                  - data:
+                    - {}
+                  range:
+                  - apply-macro:
+                    - data:
+                      - {}
+              session-timeout: []
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+          demux-destination:
+          - apply-macro:
+            - data:
+              - {}
+          demux-source:
+          - apply-macro:
+            - data:
+              - {}
+          destination-class-usage: []
+          destination-udp-port: []
+          dhcp:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            client-identifier:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              ascii: []
+              hardware-type:
+              - "0"
+              hexadecimal: []
+              prefix:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                host-name: []
+                logical-system-name: []
+                routing-instance-name: []
+              use-interface-description: []
+              user-id:
+                ascii: []
+                hexadecimal: []
+            force-discover: []
+            lease-time: []
+            metric:
+            - "0"
+            no-dns-install: {}
+            options:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              no-hostname: []
+              number:
+              - case_1: []
+            requested-options:
+            - {}
+            retransmission-attempt:
+            - "4"
+            retransmission-interval:
+            - "4"
+            server-address: []
+            update-server: []
+            vendor-id: []
+          filter:
+            adf:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              counter: []
+              input-precedence: []
+              not-mandatory: []
+              output-precedence: []
+              rule:
+              - apply-macro:
+                - data:
+                  - {}
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            group: []
+            input:
+              filter-name: []
+              precedence: []
+              shared-name: []
+            input-chain: []
+            input-list: []
+            output:
+              filter-name: []
+              precedence: []
+              shared-name: []
+            output-chain: []
+            output-list: []
+          ingress-queuing-filter:
+            filter-name: []
+          input-hierarchical-policer: []
+          ipsec-sa: []
+          iq-policing-filter:
+            filter-name: []
+          mac-validate: []
+          mtu: []
+          multicast-only: []
+          negotiate-address: []
+          next-hop-tunnel:
+          - apply-macro:
+            - data:
+              - {}
+          no-neighbor-learn: []
+          no-redirects: []
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            arp: []
+            input: []
+            output: []
+          primary: []
+          receive-options-packets: []
+          receive-ttl-exceeded: []
+          rpf-check:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            fail-filter: []
+            mode:
+              loose: []
+          sampling:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          service:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              post-service-filter: []
+              service-set:
+              - apply-macro:
+                - data:
+                  - {}
+            output:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              service-set:
+              - apply-macro:
+                - data:
+                  - {}
+          simple-filter:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+          targeted-broadcast:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            forward-and-send-to-re: []
+            forward-only: []
+          tcp-mss: []
+          transit-options-packets: []
+          transit-ttl-exceeded: []
+          tunnel-termination: {}
+          unconditional-src-learn: []
+          unnumbered-address:
+            destination: []
+            destination-profile: []
+            preferred-source-address: []
+            source: []
+        inet6:
+          accounting:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            destination-class-usage: []
+            source-class-usage:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              input: []
+              output: []
+          address:
+          - apply-macro:
+            - data:
+              - {}
+            ndp:
+            - case_1: []
+              case_2: []
+            vrrp-inet6-group:
+            - apply-macro:
+              - data:
+                - {}
+              case_1: []
+              case_2: []
+              case_3: []
+              track:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                interface:
+                - apply-macro:
+                  - data:
+                    - {}
+                  bandwidth-threshold:
+                  - {}
+                priority-hold-time: []
+                route:
+                - {}
+              vrrp-inherit-from:
+                active-group: []
+                active-interface: []
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+            web-authentication:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              http: []
+              https: []
+              redirect-to-https: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          auto-configure:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            prefix-ranges:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              authentication:
+                apply-groups: []
+                apply-groups-except: []
+                apply-macro:
+                - data:
+                  - {}
+                password: []
+                username-include:
+                  apply-groups: []
+                  apply-groups-except: []
+                  apply-macro:
+                  - data:
+                    - {}
+                  auth-server-realm: []
+                  delimiter: []
+                  domain-name: []
+                  interface-name: []
+                  source-address: []
+                  user-prefix: []
+              dynamic-profile:
+              - apply-macro:
+                - data:
+                  - {}
+                prefix:
+                - apply-macro:
+                  - data:
+                    - {}
+                  range:
+                  - apply-macro:
+                    - data:
+                      - {}
+              session-timeout: []
+          dad-disable: []
+          dad-proxy:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            interface-restricted: []
+            interface-unrestricted: []
+          demux-destination:
+          - apply-macro:
+            - data:
+              - {}
+          demux-source:
+          - apply-macro:
+            - data:
+              - {}
+          destination-udp-port: []
+          dhcpv6-client:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            client-ia-type:
+            - apply-macro:
+              - data:
+                - {}
+            client-identifier:
+              duid-type: []
+            client-type: []
+            interface-identifier: []
+            no-dns-install: {}
+            options:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              number:
+              - case_1: []
+            prefix-delegating:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              preferred-prefix-length: []
+              sub-prefix-length: []
+            rapid-commit: {}
+            req-option:
+            - apply-macro:
+              - data:
+                - {}
+            retransmission-attempt:
+            - "9"
+            update-router-advertisement:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              interface:
+              - apply-macro:
+                - data:
+                  - {}
+                enable-recursive-dns-server-option: []
+                managed-configuration: []
+                no-enable-recursive-dns-server-option: []
+                no-managed-configuration: []
+                no-other-stateful-configuration: []
+                other-stateful-configuration: []
+            update-server: []
+            use-ra-prefix: []
+            vendor-id: []
+          filter:
+            adf:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              counter: []
+              input-precedence: []
+              not-mandatory: []
+              output-precedence: []
+              rule:
+              - apply-macro:
+                - data:
+                  - {}
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            group: []
+            input:
+              filter-name: []
+              precedence: []
+              shared-name: []
+            input-chain: []
+            input-list: []
+            output:
+              filter-name: []
+              precedence: []
+              shared-name: []
+            output-chain: []
+            output-list: []
+          ingress-queuing-filter:
+            filter-name: []
+          input-hierarchical-policer: []
+          mtu: []
+          nd6-max-cache: []
+          nd6-new-hold-limit: []
+          nd6-stale-time: []
+          ndp-proxy:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            interface-restricted: []
+            interface-unrestricted: []
+          no-dad-disable: []
+          no-neighbor-learn: []
+          no-redirects: []
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          rpf-check:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            fail-filter: []
+            mode:
+              loose: []
+          sampling:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          service:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              post-service-filter: []
+              service-set:
+              - apply-macro:
+                - data:
+                  - {}
+            output:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              service-set:
+              - apply-macro:
+                - data:
+                  - {}
+          slaac-enable: []
+          tcp-mss: []
+          tunnel-termination: {}
+          unnumbered-address:
+            preferred-source-address: []
+            source: []
+        iso:
+          address:
+          - apply-macro:
+            - data:
+              - {}
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          destination-udp-port: []
+          mtu: []
+        mlfr-end-to-end:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          bundle: []
+        mlfr-uni-nni:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          bundle: []
+        mlppp:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          bundle: []
+          dynamic-profile: []
+          service-device-pool: []
+          service-interface: []
+        mpls:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          destination-udp-port: []
+          filter:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            group: []
+            input: []
+            input-chain: []
+            input-list: []
+            output: []
+            output-chain: []
+            output-list: []
+          ingress-queuing-filter:
+            filter-name: []
+          input-hierarchical-policer: []
+          maximum-labels: []
+          mtu: []
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+        pppoe:
+          access-concentrator: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          direct-connect: []
+          duplicate-protection: []
+          dynamic-profile: []
+          max-sessions: []
+          max-sessions-vsa-ignore: []
+          service-name-table: []
+          short-cycle-protection:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            filter: []
+            lockout-time-max: []
+            lockout-time-min: []
+        tcc:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          protocols: []
+          proxy:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            inet-address: []
+          remote:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            inet-address: []
+            mac-address: []
+        vpls:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          core-facing: []
+          filter:
+            adf:
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              counter: []
+              input-precedence: []
+              not-mandatory: []
+              output-precedence: []
+              rule:
+              - apply-macro:
+                - data:
+                  - {}
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            group: []
+            input:
+              filter-name: []
+              precedence: []
+              shared-name: []
+            input-chain: []
+            input-list: []
+            output:
+              filter-name: []
+              precedence: []
+              shared-name: []
+            output-chain: []
+            output-list: []
+          ingress-queuing-filter:
+            filter-name: []
+          iq-policing-filter:
+            filter-name: []
+          policer:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+          sampling:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            input: []
+            output: []
+      filter:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        input:
+          filter-name: []
+          precedence: []
+          shared-name: []
+        output:
+          filter-name: []
+          precedence: []
+          shared-name: []
+      forwarding-class-accounting:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        direction: []
+        enhanced:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          direction: []
+          family: []
+          overhead-bytes:
+          - "0"
+          traffic-type: []
+      forwarding-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        load-balance-stateful:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          load-type: []
+          per-flow: []
+          rebalance: []
+      generate-eui64: []
+      inner-vlan-id-range:
+        end: []
+        start: []
+      input-vlan-map:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        inner-tag-protocol-id: []
+        inner-vlan-id: []
+        pop: []
+        pop-pop: []
+        pop-swap: []
+        push: []
+        push-push: []
+        swap: []
+        swap-push: []
+        swap-swap: []
+        tag-protocol-id: []
+        vlan-id: []
+      interface-shared-with:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        psd-name: []
+      interface-state:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        hold-time:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          down: []
+          up: []
+        local: []
+        local-count: []
+        local-interface: []
+        local-remote: []
+        remote: []
+        vtep-count: []
+      layer2-policer:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        input-hierarchical-policer: []
+        input-policer: []
+        input-three-color: []
+        output-policer: []
+        output-three-color: []
+      load-balance:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        weight: []
+      load-balancing-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        disable-hash: []
+        hash-keys:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          egress-key: []
+          ingress-key: []
+          ipv6-source-prefix-length: []
+        preferred-active: []
+      multi-chassis-protection:
+      - apply-macro:
+        - data:
+          - {}
+      no-generate-eui64: []
+      no-routing-services: []
+      no-traps: []
+      oam-liveness:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        down-count: []
+        up-count: []
+      oam-period:
+        disable: {}
+        oam-period: []
+      output-vlan-map:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        inner-tag-protocol-id: []
+        inner-vlan-id: []
+        pop: []
+        pop-pop: []
+        pop-swap: []
+        push: []
+        push-push: []
+        swap: []
+        swap-push: []
+        swap-swap: []
+        tag-protocol-id: []
+        vlan-id: []
+      peer-interface:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        interface-name: []
+      peer-psd:
+        psd-name: []
+      policer-overhead:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        egress: []
+        ingress: []
+        policer-overhead-value: []
+      ppp-options:
+        aaa-options: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        authentication: []
+        chap:
+          access-profile: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          challenge-length:
+            maximum:
+            - "32"
+            minimum:
+            - "16"
+          default-chap-secret: []
+          local-name: []
+          no-rfc2486: []
+          passive: []
+        compression:
+          acfc: []
+          pfc: []
+        dynamic-profile: []
+        ignore-magic-number-mismatch: []
+        initiate-ncp:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          dual-stack-passive: []
+          ip: []
+          ipv6: []
+        ipcp-suggest-dns-option: []
+        lcp-connection-update: []
+        lcp-max-conf-req: []
+        lcp-restart-timer: []
+        local-authentication:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          password: []
+          username-include:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            circuit-id: []
+            delimiter: []
+            domain-name: []
+            mac-address: []
+            remote-id: []
+        loopback-clear-timer: []
+        mru: []
+        mtu: []
+        ncp-max-conf-req: []
+        ncp-restart-timer: []
+        no-termination-request: []
+        on-demand-ip-address: []
+        pap:
+          access-profile: []
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          default-password: []
+          local-name: []
+          local-password: []
+          no-rfc2486: []
+          passive: []
+        peer-ip-address-optional: []
+      pppoe-options:
+        access-concentrator: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        auto-reconnect: []
+        client: []
+        idle-timeout: []
+        ppp-max-payload: []
+        server: []
+        service-name: []
+        underlying-interface: []
+      pppoe-underlying-options:
+        access-concentrator: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        direct-connect: []
+        duplicate-protection: []
+        dynamic-profile: []
+        max-sessions: []
+        max-sessions-vsa-ignore: []
+        service-name-table: []
+        short-cycle-protection:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          filter: []
+          lockout-time-max: []
+          lockout-time-min: []
+      proxy-arp:
+        restricted: []
+        unrestricted: []
+      radio-router:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        bandwidth: []
+        capacity: []
+        credit:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          interval: []
+        data-rate: []
+        delay: []
+        latency: []
+        margin: []
+        quality: []
+        resource: []
+        threshold: []
+      routing-service:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        disable: []
+        enable: []
+      routing-services: []
+      rpm:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        client: []
+        client-delegate-probes: []
+        server: []
+        twamp-client: []
+        twamp-server: []
+      service:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        pcef:
+        - activate:
+          - apply-macro:
+            - data:
+              - {}
+          apply-macro:
+          - data:
+            - {}
+      services-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+      shaping:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        cbr:
+          cbr-value: []
+          cdvt: []
+        queue-length: []
+        rtvbr:
+          burst: []
+          cdvt: []
+          peak: []
+          sustained: []
+        vbr:
+          burst: []
+          cdvt: []
+          peak: []
+          sustained: []
+      targeted-distribution:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        backup-list: []
+        primary-list: []
+        standby-list: []
+      targeted-options:
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        backup: []
+        group: []
+        primary: []
+        weight: []
+      traps: []
+      tunnel:
+        allow-fragmentation: []
+        apply-groups: []
+        apply-groups-except: []
+        apply-macro:
+        - data:
+          - {}
+        backup-destination: []
+        destination: []
+        do-not-fragment: []
+        encapsulation:
+          ipip:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            destination:
+              address: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+            source:
+              address: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              interface: []
+          udp:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            destination:
+              address: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+            source:
+              address: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              interface: []
+          vxlan-gpe:
+            apply-groups: []
+            apply-groups-except: []
+            apply-macro:
+            - data:
+              - {}
+            destination:
+              address: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              mac-address: []
+            destination-udp-port: []
+            source:
+              address: []
+              apply-groups: []
+              apply-groups-except: []
+              apply-macro:
+              - data:
+                - {}
+              interface: []
+              mac-address: []
+            tunnel-endpoint: []
+            vni: []
+        flow-label: []
+        key: []
+        no-path-mtu-discovery: []
+        path-mtu-discovery: []
+        routing-instance:
+          apply-groups: []
+          apply-groups-except: []
+          apply-macro:
+          - data:
+            - {}
+          destination: []
+        source: []
+        traffic-class: []
+        ttl: []
+      vci-range:
+        end: []
+        start: []
+    vdsl-options:
+      apply-groups: []
+      apply-groups-except: []
+      apply-macro:
+      - data:
+        - {}
+      sos: []
+      sra:
+      - disable
+      v43:
+      - enable
+      vdsl-profile: []
+  encoding: JSON_IETF
