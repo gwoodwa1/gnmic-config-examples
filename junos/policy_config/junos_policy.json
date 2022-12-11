@@ -1,0 +1,51 @@
+{
+  "policy-statement": [
+    {
+      "name": "import-policy",
+      "term": [
+        {
+          "name": "1",
+          "from": {
+            "prefix-list": [
+              {
+                "name": "mgt-prefix-list"
+              }
+            ]
+          },
+          "then": {
+            "accept": [
+              null
+            ]
+          }
+        },
+        {
+          "name": "2",
+          "then": {
+            "reject": [
+              null
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "prefix-list": [
+    {
+      "name": "mgt-prefix-list",
+      "prefix-list-item": [
+        {
+          "name": "10.10.10.0/24"
+        },
+        {
+          "name": "10.10.20.0/24"
+        },
+        {
+          "name": "10.10.30.0/24"
+        },
+        {
+          "name": "10.10.40.0/24"
+        }
+      ]
+    }
+  ]
+}
