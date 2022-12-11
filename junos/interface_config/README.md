@@ -34,3 +34,13 @@ gnmic -a 172.21.20.7:57400 -u admin -p admin@123 \
     --update-file 'junos_intf_example.json' \
     -e json_ietf --log
 ```
+
+or
+
+```
+gnmic -a 172.21.20.7:57400 -u admin -p admin@123 \
+    --insecure set \
+    --update-path 'juniper:/configuration/interfaces'\
+    --update-file 'junos_intf_example.yaml' \
+    -e json_ietf --log
+```
