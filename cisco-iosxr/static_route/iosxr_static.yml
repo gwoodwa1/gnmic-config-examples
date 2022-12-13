@@ -1,0 +1,32 @@
+---
+  default-vrf:
+    address-family:
+      vrfipv4:
+        vrf-unicast:
+          vrf-prefixes:
+            vrf-prefix:
+            - prefix: 10.109.0.0
+              prefix-length: 16
+              vrf-route:
+                vrf-next-hop-table:
+                  vrf-next-hop-next-hop-address:
+                  - next-hop-address: 172.16.1.3
+            - prefix: 10.110.0.0
+              prefix-length: 16
+              vrf-route:
+                vrf-next-hop-table:
+                  vrf-next-hop-next-hop-address:
+                  - next-hop-address: 172.16.1.3
+            - prefix: 10.120.0.0
+              prefix-length: 16
+              vrf-route:
+                vrf-next-hop-table:
+                  vrf-next-hop-next-hop-address:
+                  - next-hop-address: 172.16.1.3
+
+            - prefix: 10.130.0.0
+              prefix-length: 16
+              vrf-route:
+                vrf-next-hop-table:
+                  vrf-next-hop-next-hop-address:
+                  - next-hop-address: 172.16.1.3
