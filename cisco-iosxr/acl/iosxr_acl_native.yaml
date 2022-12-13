@@ -1,0 +1,57 @@
+---
+accesses:
+  access:
+  - access-list-name: Internet_Ingress
+    access-list-entries:
+      access-list-entry:
+      - sequence-number: 10
+        source-network:
+          source-address: 172.41.25.1
+          source-wild-card-bits: 0.0.0.0
+        grant: permit
+      - sequence-number: 20
+        grant: permit
+        source-network:
+          source-address: 172.31.255.1
+          source-wild-card-bits: 0.0.0.0
+      - sequence-number: 30
+        grant: deny
+        sequence-str: '30'
+        source-network:
+          source-address: 172.41.25.10
+          source-wild-card-bits: 0.0.0.0
+      - sequence-number: 40
+        grant: permit
+        sequence-str: '40'
+        source-network:
+          source-address: 172.31.255.1
+          source-wild-card-bits: 0.0.0.0
+      - sequence-number: 50
+        destination-network:
+          destination-address: 0.0.0.0
+          destination-prefix-length: 0
+        destination-port:
+          destination-operator: equal
+          first-destination-port: tftp
+        grant: permit
+        protocol: udp
+        sequence-str: '50'
+        source-network:
+          source-address: 10.10.10.1
+          source-prefix-length: 32
+          
+      - sequence-number: 60
+        destination-network:
+          destination-address: 0.0.0.0
+          destination-prefix-length: 0
+        destination-port:
+          destination-operator: equal
+          first-destination-port: 801
+        grant: permit
+        protocol: tcp
+        sequence-str: '60'
+        source-network:
+          source-address: 10.10.10.1
+          source-prefix-length: 32
+      - sequence-number: 70
+        grant: deny
