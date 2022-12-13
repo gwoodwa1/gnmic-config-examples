@@ -28,7 +28,7 @@ or
 ```
 gnmic -a 172.21.20.7:57400 -u admin -p admin@123 \
     --insecure set \
-    --update-path 'juniper:/configuration/firewall'\
+    --update-path 'Cisco-IOS-XR-ip-static-cfg:router-static'\
     --update-file 'iosxr_static.yaml' \
     -e json_ietf --log
 ```
