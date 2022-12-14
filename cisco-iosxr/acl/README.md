@@ -33,4 +33,7 @@ gnmic -a 172.21.20.7:57400 -u admin -p admin@123 \
     --update-file 'iosxr_acl_native.yaml' \
     -e json_ietf --log
 ```
+This will produce the following configuration below:
+![Screenshot from 2022-12-14 12-07-52](https://user-images.githubusercontent.com/63735312/207591489-01c1ce52-a4f4-4696-83bc-a4284cdbf834.png)
+
 
