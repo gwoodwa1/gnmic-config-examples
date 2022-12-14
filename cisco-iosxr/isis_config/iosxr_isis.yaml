@@ -1,0 +1,80 @@
+---
+instances:
+  instance:
+  - afs:
+      af:
+      - af-data:
+          ispf:
+            states:
+              state:
+              - level: level2
+                state: enabled
+          maximum-paths: 4
+          metric-styles:
+            metric-style:
+            - level: not-set
+              style: new-metric-style
+          spf-intervals:
+            spf-interval:
+            - backoff-algorithm: exponential
+              initial-wait: 100
+              level: not-set
+              maximum-wait: 2000
+              secondary-wait: 200
+        af-name: ipv4
+        saf-name: unicast
+    instance-name: core_network
+    interfaces:
+      interface:
+      - bfd:
+          detection-multiplier: 3
+          enable-ipv4: true
+          interval: 200
+        circuit-type: level2
+        interface-afs:
+          interface-af:
+          - af-name: ipv4
+            interface-af-data:
+              metrics:
+                metric:
+                - level: level2
+                  metric: 600
+              mpls-ldp:
+                sync-level: 2
+              running:
+              -
+            saf-name: unicast
+        interface-name: GigabitEthernet0/0/0/6
+        point-to-point:
+        -
+        running:
+        -
+    is-type: level1-and2
+    lsp-generation-intervals:
+      lsp-generation-interval:
+      - backoff-algorithm:
+        -
+        initial-wait: 1
+        level: level1
+        maximum-wait: 9000
+        secondary-wait: 1000
+    lsp-lifetimes:
+      lsp-lifetime:
+      - level: not-set
+        lifetime: 65535
+    lsp-refresh-intervals:
+      lsp-refresh-interval:
+      - interval: 32000
+        level: not-set
+    nets:
+      net:
+      - net-name: 49.0004.0200.1900.3232.00
+    nsf:
+      flavor: cisco-proprietary-nsf
+    overload-bits:
+      overload-bit:
+      - hippity-period: 90
+        level: not-set
+        overload-bit-mode: startup-period
+    running:
+    -
