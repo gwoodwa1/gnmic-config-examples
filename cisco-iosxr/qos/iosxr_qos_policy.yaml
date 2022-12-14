@@ -1,0 +1,81 @@
+---
+class-maps:
+  class-map:
+  - class-map-mode-match-any:
+    -
+    match:
+      protocol:
+      - tcp
+      - ipv4
+      - udp
+      - sctp
+    name: corp_cs5_ingress
+    type: qos
+  - class-map-mode-match-any:
+    -
+    match:
+      precedence:
+      - priority
+    name: customer_traffic
+    type: qos
+  - class-map-mode-match-any:
+    -
+    match:
+      dscp:
+      - af12
+    name: priority-ingress
+    type: qos
+  - class-map-mode-match-any:
+    -
+    match:
+      vlan:
+      - '10'
+    name: priority_ingress
+    type: qos
+  - class-map-mode-match-any:
+    -
+    match:
+      precedence:
+      - routine
+    name: low_priority_ingress
+    type: qos
+
+policy-maps:
+  policy-map:
+  - name: Child_Ingress
+    policy-map-rule:
+    - class-name: corp_cs5_ingress
+      class-type: qos
+      set:
+        dscp: cs5
+    - class-name: priority_ingress
+      class-type: qos
+      set:
+        dscp: af11
+    - class-name: low_priority_ingress
+      class-type: qos
+      set:
+        dscp: af43
+    type: qos
+  - description: Parent Policy
+    name: Parent_Ingress
+    policy-map-rule:
+    - class-name: customer_traffic
+      class-type: qos
+      police:
+        rate:
+          units: mbps
+          value: 100
+      service-policy:
+        policy-name: Child_ingress
+        type: qos
+    type: qos
+  - description: Top Level Policy
+    name: Grandparent_Policy_Ingress
+    policy-map-rule:
+    - class-name: class-default
+      class-type: qos
+      service-policy:
+        policy-name: Parent_Ingress
+        type: qos
+    type: qos
