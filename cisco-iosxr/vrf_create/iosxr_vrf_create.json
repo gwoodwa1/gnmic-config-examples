@@ -61,6 +61,68 @@
         null
       ],
       "vrf-name": "dc_lan"
+    },
+    {
+      "Cisco-IOS-XR-ipv4-bgp-cfg:bgp-global": {
+        "route-distinguisher": {
+          "as": 65002,
+          "as-index": 500,
+          "as-xx": 0,
+          "type": "as"
+        }
+      },
+      "afs": {
+        "af": [
+          {
+            "Cisco-IOS-XR-ipv4-bgp-cfg:bgp": {
+              "export-route-targets": {
+                "route-targets": {
+                  "route-target": [
+                    {
+                      "as-or-four-byte-as": [
+                        {
+                          "as": 65002,
+                          "as-index": 5000,
+                          "as-xx": 0,
+                          "stitching-rt": 0
+                        }
+                      ],
+                      "type": "as"
+                    }
+                  ]
+                }
+              },
+              "import-route-targets": {
+                "route-targets": {
+                  "route-target": [
+                    {
+                      "as-or-four-byte-as": [
+                        {
+                          "as": 65002,
+                          "as-index": 5000,
+                          "as-xx": 0,
+                          "stitching-rt": 0
+                        }
+                      ],
+                      "type": "as"
+                    }
+                  ]
+                }
+              }
+            },
+            "af-name": "ipv4",
+            "create": [
+              null
+            ],
+            "saf-name": "unicast",
+            "topology-name": "default"
+          }
+        ]
+      },
+      "create": [
+        null
+      ],
+      "vrf-name": "dmz_network"
     }
   ]
 }
