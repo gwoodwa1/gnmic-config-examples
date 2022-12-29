@@ -16,20 +16,21 @@ You then need to navigate to the correct path for the software version eg.:
  Please change the credentials and GNMI Port as appropriate for your setup
 
 ```
-gnmic -a 172.21.20.7:57400 -u admin -p admin@123 \
+gnmic -a 172.21.20.1:57400 -u clab -p clab@123 \                                                                                                         
     --insecure set \
-    --update-path 'Cisco-IOS-XR-ip-static-cfg:router-static'\
-    --update-file 'iosxr_static.json' \
+    --update-path 'Cisco-IOS-XR-infra-rsi-cfg:vrfs'\
+    --update-file 'vrf_create_iosxr.json' \
     -e json_ietf --log
+
 ```
 
 or
 
 ```
-gnmic -a 172.21.20.7:57400 -u admin -p admin@123 \
+gnmic -a 172.21.20.1:57400 -u clab -p clab@123 \                                                                                                         
     --insecure set \
-    --update-path 'Cisco-IOS-XR-ip-static-cfg:router-static'\
-    --update-file 'iosxr_static.yaml' \
+    --update-path 'Cisco-IOS-XR-infra-rsi-cfg:vrfs'\
+    --update-file 'vrf_create_iosxr.yaml' \
     -e json_ietf --log
 ```
 The configuration it generates will be as per below:
