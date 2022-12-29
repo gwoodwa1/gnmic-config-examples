@@ -34,5 +34,6 @@ gnmic -a 172.21.20.1:57400 -u clab -p clab@123 \
     -e json_ietf --log
 ```
 The configuration it generates will be as per below:
+![Screenshot from 2022-12-29 09-33-37](https://user-images.githubusercontent.com/63735312/209932401-daa5613d-3889-4d3f-acc7-7a6adfd3edda.png)
 
 
