@@ -43,3 +43,6 @@ gnmic -a 172.21.20.7:57400 -u admin -p admin@123 \
     --update-file 'junos_config_acl.yaml' \
     -e json_ietf --log
 ```
+How this looks configured in the CLI:
+![Screenshot from 2022-12-29 11-40-12](https://user-images.githubusercontent.com/63735312/209946127-8b51ccd2-ae9a-4c6c-894e-584227a8e06e.png)
+
