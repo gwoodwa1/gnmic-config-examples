@@ -1,0 +1,29 @@
+---
+acl-sets:
+  acl-set:
+    name: Internet_Block_Ingress
+    type: ACL_IPV4
+    config:
+      name: Internet_Block_Ingress
+      type: ACL_IPV4
+    acl-entries:
+      acl-entry:
+      - sequence-id: 10
+        config:
+          sequence-id: 10
+      - sequence-id: 20
+        config:
+          sequence-id: 20
+        ipv4:
+          config:
+            source-address: 172.31.255.1/32
+        actions:
+          config:
+            forwarding-action: ACCEPT
+      - sequence-id: 30
+        config:
+          sequence-id: 30
+        actions:
+          config:
+            forwarding-action: REJECT
+            
