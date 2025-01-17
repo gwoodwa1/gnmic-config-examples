@@ -11,3 +11,9 @@ set system services extension-service request-response grpc clear-text port 5740
 set system services extension-service request-response grpc max-connections 4
 ```
 
+You may also need this for the reponse to be sent back to the client.
+
+```
+set system services extension-service request-response grpc routing-instance mgmt_junos
+```
+
